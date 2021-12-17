@@ -13,6 +13,8 @@
 		9A6B37E2276C3ADF000188F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6B37E0276C3ADF000188F5 /* Main.storyboard */; };
 		9A6B37E4276C3AE0000188F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A6B37E3276C3AE0000188F5 /* Assets.xcassets */; };
 		9A6B37E7276C3AE0000188F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6B37E5276C3AE0000188F5 /* LaunchScreen.storyboard */; };
+		9A6B37F9276C4DAA000188F5 /* SDSamliphopangcheOutline.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9A6B37F7276C4DAA000188F5 /* SDSamliphopangcheOutline.otf */; };
+		9A6B37FC276C4E29000188F5 /* SDSamliphopangcheBasic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9A6B37F8276C4DAA000188F5 /* SDSamliphopangcheBasic.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9A6B37E3276C3AE0000188F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A6B37E6276C3AE0000188F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A6B37E8276C3AE0000188F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A6B37F7276C4DAA000188F5 /* SDSamliphopangcheOutline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SDSamliphopangcheOutline.otf; sourceTree = "<group>"; };
+		9A6B37F8276C4DAA000188F5 /* SDSamliphopangcheBasic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SDSamliphopangcheBasic.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		9A6B37D9276C3ADF000188F5 /* ProjectTimeToGo */ = {
 			isa = PBXGroup;
 			children = (
+				9A6B37F6276C4D67000188F5 /* Font */,
 				9A6B37DA276C3ADF000188F5 /* AppDelegate.swift */,
 				9A6B37DC276C3ADF000188F5 /* SceneDelegate.swift */,
 				9A6B37DE276C3ADF000188F5 /* ViewController.swift */,
@@ -65,6 +70,15 @@
 				9A6B37E8276C3AE0000188F5 /* Info.plist */,
 			);
 			path = ProjectTimeToGo;
+			sourceTree = "<group>";
+		};
+		9A6B37F6276C4D67000188F5 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				9A6B37F8276C4DAA000188F5 /* SDSamliphopangcheBasic.otf */,
+				9A6B37F7276C4DAA000188F5 /* SDSamliphopangcheOutline.otf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +139,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A6B37E7276C3AE0000188F5 /* LaunchScreen.storyboard in Resources */,
+				9A6B37FC276C4E29000188F5 /* SDSamliphopangcheBasic.otf in Resources */,
+				9A6B37F9276C4DAA000188F5 /* SDSamliphopangcheOutline.otf in Resources */,
 				9A6B37E4276C3AE0000188F5 /* Assets.xcassets in Resources */,
 				9A6B37E2276C3ADF000188F5 /* Main.storyboard in Resources */,
 			);
