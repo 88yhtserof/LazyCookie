@@ -1,24 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="24b-dj-VGg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SDSamliphopangcheBasic.otf">
+            <string>SDSamliphopangcheBasic</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProjectTimeToGo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="o5f-Zb-Euv">
+                                <rect key="frame" x="40" y="112" width="334" height="584"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcd-bw-rxu">
+                                        <rect key="frame" x="119.5" y="0.0" width="95" height="72"/>
+                                        <fontDescription key="fontDescription" name="SDSamliphopangcheBasic" family="Sandoll Samliphopangche" pointSize="60"/>
+                                        <state key="normal" title="시작">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.14117647058823529" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firstpage" translatesAutoresizingMaskIntoConstraints="NO" id="t8M-PC-APy">
+                                        <rect key="frame" x="0.0" y="72" width="334" height="512"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="t8M-PC-APy" firstAttribute="top" secondItem="vcd-bw-rxu" secondAttribute="bottom" id="Cuu-Qg-ApS"/>
+                                    <constraint firstAttribute="trailing" secondItem="t8M-PC-APy" secondAttribute="trailing" id="TD4-c0-kef"/>
+                                    <constraint firstAttribute="bottom" secondItem="t8M-PC-APy" secondAttribute="bottom" id="ePW-Q9-d7T"/>
+                                    <constraint firstItem="t8M-PC-APy" firstAttribute="leading" secondItem="o5f-Zb-Euv" secondAttribute="leading" id="rRN-Ql-YLE"/>
+                                    <constraint firstItem="vcd-bw-rxu" firstAttribute="top" secondItem="o5f-Zb-Euv" secondAttribute="top" id="wKN-en-ohc"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.98823529409999999" green="0.98431372549999996" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="o5f-Zb-Euv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="112" id="42j-7g-1Er"/>
+                            <constraint firstItem="o5f-Zb-Euv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="P4j-UN-nGa"/>
+                            <constraint firstAttribute="trailing" secondItem="o5f-Zb-Euv" secondAttribute="trailing" constant="40" id="p87-uP-xVr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="o5f-Zb-Euv" secondAttribute="bottom" constant="78" id="qnD-m0-f72"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="nTA-v9-hD3">
+                        <barButtonItem key="rightBarButtonItem" image="ellipsis.bubble.fill" catalog="system" id="8at-rh-H7y"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1015.9420289855074" y="69.642857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Hom-Dd-OHk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="24b-dj-VGg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="CmF-gQ-vmT">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.9882352941176471" green="0.98431372549019602" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ckv-ae-XEQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="beF-MN-hQx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105.79710144927537" y="69.642857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ellipsis.bubble.fill" catalog="system" width="128" height="110"/>
+        <image name="firstpage" width="512" height="512"/>
+    </resources>
 </document>
