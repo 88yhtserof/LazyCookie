@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -29,6 +30,9 @@
                                         <state key="normal" title="시작">
                                             <color key="titleColor" red="0.20000000000000001" green="0.14117647058823529" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="0g7-JR-NEb" kind="show" id="hdf-fd-757"/>
+                                        </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firstpage" translatesAutoresizingMaskIntoConstraints="NO" id="t8M-PC-APy">
                                         <rect key="frame" x="0.0" y="72" width="334" height="512"/>
@@ -53,12 +57,32 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nTA-v9-hD3">
-                        <barButtonItem key="rightBarButtonItem" image="ellipsis.bubble.fill" catalog="system" id="8at-rh-H7y"/>
+                        <barButtonItem key="rightBarButtonItem" image="ellipsis.bubble.fill" catalog="system" id="8at-rh-H7y">
+                            <connections>
+                                <segue destination="W9k-OQ-ED1" kind="show" id="aOp-7J-RQw"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1015.9420289855074" y="69.642857142857139"/>
+            <point key="canvasLocation" x="945" y="70"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XnW-iR-uSB">
+            <objects>
+                <viewController id="W9k-OQ-ED1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5cC-Q1-sEO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="IdD-TS-ZmQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qmw-PH-IlZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rp1-c9-JjW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1751" y="70"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Hom-Dd-OHk">
@@ -83,9 +107,28 @@
             </objects>
             <point key="canvasLocation" x="105.79710144927537" y="69.642857142857139"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="XWe-qp-GS8">
+            <objects>
+                <viewController id="0g7-JR-NEb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q0Z-xI-Cqk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="X7s-Bc-Kag"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JVN-sd-4zz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RZ6-f5-VGU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="945" y="813"/>
+        </scene>
     </scenes>
     <resources>
         <image name="ellipsis.bubble.fill" catalog="system" width="128" height="110"/>
         <image name="firstpage" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
