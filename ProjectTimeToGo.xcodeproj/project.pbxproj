@@ -10,6 +10,7 @@
 		9A2F96BF276F4BF400BEE55B /* NanumBarunpenB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9A2F96B7276F097100BEE55B /* NanumBarunpenB.otf */; };
 		9A2F96C0276F4BF700BEE55B /* NanumBarunpenR.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9A2F96B8276F097100BEE55B /* NanumBarunpenR.otf */; };
 		9A2F96C2276F503E00BEE55B /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F96C1276F503E00BEE55B /* CustomView.swift */; };
+		9A2F96C4276F590D00BEE55B /* TimePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F96C3276F590D00BEE55B /* TimePickerViewController.swift */; };
 		9A6B37DB276C3ADF000188F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6B37DA276C3ADF000188F5 /* AppDelegate.swift */; };
 		9A6B37DD276C3ADF000188F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6B37DC276C3ADF000188F5 /* SceneDelegate.swift */; };
 		9A6B37DF276C3ADF000188F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6B37DE276C3ADF000188F5 /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 		9A2F96B7276F097100BEE55B /* NanumBarunpenB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunpenB.otf; sourceTree = "<group>"; };
 		9A2F96B8276F097100BEE55B /* NanumBarunpenR.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunpenR.otf; sourceTree = "<group>"; };
 		9A2F96C1276F503E00BEE55B /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		9A2F96C3276F590D00BEE55B /* TimePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerViewController.swift; sourceTree = "<group>"; };
 		9A6B37D7276C3ADF000188F5 /* ProjectTimeToGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectTimeToGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6B37DA276C3ADF000188F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A6B37DC276C3ADF000188F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				9A6B37E8276C3AE0000188F5 /* Info.plist */,
 				9AEAC206276E1957007F9C82 /* SettingViewController.swift */,
 				9A2F96C1276F503E00BEE55B /* CustomView.swift */,
+				9A2F96C3276F590D00BEE55B /* TimePickerViewController.swift */,
 			);
 			path = ProjectTimeToGo;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A2F96C2276F503E00BEE55B /* CustomView.swift in Sources */,
+				9A2F96C4276F590D00BEE55B /* TimePickerViewController.swift in Sources */,
 				9A6B37DF276C3ADF000188F5 /* ViewController.swift in Sources */,
 				9A6B37DB276C3ADF000188F5 /* AppDelegate.swift in Sources */,
 				9A6B37DD276C3ADF000188F5 /* SceneDelegate.swift in Sources */,

@@ -173,6 +173,9 @@
                                                         <state key="normal" title="1시간 30분">
                                                             <color key="titleColor" red="0.98823529409999999" green="0.98431372549999996" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <segue destination="CE2-PZ-IlL" kind="presentation" id="KCz-7U-fq2"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -281,6 +284,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RZ6-f5-VGU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="944.92753623188412" y="812.94642857142856"/>
+        </scene>
+        <!--Time Picker View Controller-->
+        <scene sceneID="N7Z-s7-Aso">
+            <objects>
+                <viewController id="CE2-PZ-IlL" customClass="TimePickerViewController" customModule="ProjectTimeToGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SAO-id-50h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eb9-T5-4Rw" customClass="CustomView" customModule="ProjectTimeToGo" customModuleProvider="target">
+                                <rect key="frame" x="50" y="287.5" width="314" height="267"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gw-Lx-Vy4">
+                                        <rect key="frame" x="264" y="209" width="30" height="38"/>
+                                        <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="20"/>
+                                        <state key="normal" title="설정">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="10" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lda-U3-bpX">
+                                        <rect key="frame" x="20" y="10" width="274" height="216"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Lda-U3-bpX" secondAttribute="height" multiplier="137:108" id="jQI-vM-QcY"/>
+                                        </constraints>
+                                    </datePicker>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eb9-T5-4Rw" secondAttribute="height" multiplier="314:267" id="AnZ-Rx-RXp"/>
+                                    <constraint firstAttribute="trailing" secondItem="9gw-Lx-Vy4" secondAttribute="trailing" constant="20" id="OPD-bB-khW"/>
+                                    <constraint firstItem="Lda-U3-bpX" firstAttribute="top" secondItem="eb9-T5-4Rw" secondAttribute="top" constant="10" id="OxH-cj-1EB"/>
+                                    <constraint firstItem="Lda-U3-bpX" firstAttribute="leading" secondItem="eb9-T5-4Rw" secondAttribute="leading" constant="20" id="Qyb-sY-cKp"/>
+                                    <constraint firstAttribute="bottom" secondItem="9gw-Lx-Vy4" secondAttribute="bottom" constant="20" id="rS2-gt-NDd"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lda-U3-bpX" secondAttribute="trailing" constant="20" id="vJ7-VO-4jr"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AFW-bM-eQk"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eb9-T5-4Rw" firstAttribute="leading" secondItem="AFW-bM-eQk" secondAttribute="leading" constant="50" id="Fke-je-xEr"/>
+                            <constraint firstItem="eb9-T5-4Rw" firstAttribute="centerY" secondItem="SAO-id-50h" secondAttribute="centerY" id="Yja-22-DRx"/>
+                            <constraint firstItem="AFW-bM-eQk" firstAttribute="trailing" secondItem="eb9-T5-4Rw" secondAttribute="trailing" constant="50" id="abs-uQ-QQQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="timePicker" destination="Lda-U3-bpX" id="ZUF-vf-IXD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5nc-LZ-s21" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1663.7681159420292" y="812.94642857142856"/>
         </scene>
     </scenes>
     <resources>
