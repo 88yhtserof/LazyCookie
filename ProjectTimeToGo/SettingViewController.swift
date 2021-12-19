@@ -9,10 +9,13 @@ import UIKit
 
 class SettingViewController: UIViewController {
 
+    @IBOutlet weak var textGoal: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        textGoal.attributedPlaceholder = NSAttributedString(string: "목표를 적어주세요.", attributes: [.foregroundColor : UIColor(red: 252/255, green: 251/255, blue: 238/255, alpha: 1)])
     }
     
 
