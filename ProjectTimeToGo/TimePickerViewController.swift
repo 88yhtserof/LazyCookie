@@ -16,8 +16,12 @@ class TimePickerViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.timePicker.setValue(UIColor.brown, forKey: "textColor")
     }
+    @IBAction func changedTime(_ sender: UIDatePicker) {
+    }
     
-
+    @IBAction func tapBtnSetting(_ sender: UIButton) {
+    }
+    
     /*
     // MARK: - Navigation
 

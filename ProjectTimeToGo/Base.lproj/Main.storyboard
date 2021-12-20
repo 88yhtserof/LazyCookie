@@ -302,12 +302,18 @@
                                         <state key="normal" title="설정">
                                             <color key="titleColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapBtnSetting:" destination="CE2-PZ-IlL" eventType="touchUpInside" id="nUQ-No-xOF"/>
+                                        </connections>
                                     </button>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="10" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lda-U3-bpX">
                                         <rect key="frame" x="20" y="10" width="274" height="216"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Lda-U3-bpX" secondAttribute="height" multiplier="137:108" id="jQI-vM-QcY"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="changedTime:" destination="CE2-PZ-IlL" eventType="valueChanged" id="Pml-Qx-vb4"/>
+                                        </connections>
                                     </datePicker>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
