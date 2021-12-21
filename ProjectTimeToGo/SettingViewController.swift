@@ -10,6 +10,10 @@ import UIKit
 class SettingViewController: UIViewController {
 
     @IBOutlet weak var textGoal: UITextField!
+    @IBOutlet weak var btnTime: UIButton!
+    
+    var hour: Int = 1
+    var minute: Int = 30
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,15 +22,22 @@ class SettingViewController: UIViewController {
         textGoal.attributedPlaceholder = NSAttributedString(string: "목표를 적어주세요.", attributes: [.foregroundColor : UIColor(red: 252/255, green: 251/255, blue: 238/255, alpha: 1)])
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let timePickerViewController = segue.destination as? TimePickerViewController {
+            timePickerViewController.timePickerDelegate = self
+        }
     }
-    */
+}
 
+extension SettingViewController: TimePickerDelegate {
+    func setTime(hour: Int?, minute: Int?) {
+        if let resultHour = hour{
+            self.hour = resultHour
+        }
+        if let resultMinute = minute {
+            self.minute = resultMinute
+        }
+        
+        self.btnTime.setTitle("\(self.hour)시간 \(self.minute)분", for: .normal)
+    }
 }
