@@ -275,16 +275,38 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JVN-sd-4zz">
-                        <barButtonItem key="rightBarButtonItem" title="완료" id="3UX-rj-D1p"/>
+                        <barButtonItem key="rightBarButtonItem" title="완료" id="3UX-rj-D1p">
+                            <connections>
+                                <segue destination="BLf-cN-wxo" kind="show" id="XWX-nj-uUC"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="btnTime" destination="zPu-8E-xKx" id="d1p-2d-HO5"/>
+                        <outlet property="textFieldAchievement" destination="Q5J-Om-AlQ" id="vtg-Bu-f97"/>
+                        <outlet property="textFieldFailure" destination="Shx-y5-vHP" id="3YB-cz-flG"/>
                         <outlet property="textGoal" destination="mSr-s0-IZ8" id="CrP-cV-4Wx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RZ6-f5-VGU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="944.92753623188412" y="812.94642857142856"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="pmB-dY-lpc">
+            <objects>
+                <viewController id="BLf-cN-wxo" customClass="MainViewController" customModule="ProjectTimeToGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U6W-cW-7Da">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="NRB-08-eGH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VEk-UJ-5Nt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qml-Cm-Lpw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="106" y="813"/>
         </scene>
         <!--Time Picker View Controller-->
         <scene sceneID="N7Z-s7-Aso">

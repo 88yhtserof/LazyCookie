@@ -20,6 +20,7 @@
 		9A6B37F9276C4DAA000188F5 /* SDSamliphopangcheOutline.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9A6B37F7276C4DAA000188F5 /* SDSamliphopangcheOutline.otf */; };
 		9A6B37FC276C4E29000188F5 /* SDSamliphopangcheBasic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9A6B37F8276C4DAA000188F5 /* SDSamliphopangcheBasic.otf */; };
 		9AD27C4E2771A767007B936B /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD27C4D2771A767007B936B /* Goal.swift */; };
+		9AD27C502771B2F6007B936B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD27C4F2771B2F6007B936B /* MainViewController.swift */; };
 		9AEAC207276E1957007F9C82 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEAC206276E1957007F9C82 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		9A6B37F7276C4DAA000188F5 /* SDSamliphopangcheOutline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SDSamliphopangcheOutline.otf; sourceTree = "<group>"; };
 		9A6B37F8276C4DAA000188F5 /* SDSamliphopangcheBasic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SDSamliphopangcheBasic.otf; sourceTree = "<group>"; };
 		9AD27C4D2771A767007B936B /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		9AD27C4F2771B2F6007B936B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9AEAC206276E1957007F9C82 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 				9A2F96C1276F503E00BEE55B /* CustomView.swift */,
 				9A2F96C3276F590D00BEE55B /* TimePickerViewController.swift */,
 				9AD27C4D2771A767007B936B /* Goal.swift */,
+				9AD27C4F2771B2F6007B936B /* MainViewController.swift */,
 			);
 			path = ProjectTimeToGo;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				9A6B37DD276C3ADF000188F5 /* SceneDelegate.swift in Sources */,
 				9AEAC207276E1957007F9C82 /* SettingViewController.swift in Sources */,
 				9AD27C4E2771A767007B936B /* Goal.swift in Sources */,
+				9AD27C502771B2F6007B936B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,9 +11,12 @@ class SettingViewController: UIViewController {
 
     @IBOutlet weak var textGoal: UITextField!
     @IBOutlet weak var btnTime: UIButton!
+    @IBOutlet weak var textFieldAchievement: UITextField!
+    @IBOutlet weak var textFieldFailure: UITextField!
     
     var hour: Int = 1
     var minute: Int = 30
+    var goal: Goal? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +28,24 @@ class SettingViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let timePickerViewController = segue.destination as? TimePickerViewController {
             timePickerViewController.timePickerDelegate = self
+        }
+        
+        let goalString = textGoal.text ?? ""
+        let achievement = textFieldAchievement.text ?? ""
+        let failure = textFieldFailure.text ?? ""
+        
+        
+        
+        if let mainViewController = segue.destination as? MainViewController {
+            goal = Goal(goal: goalString,
+                        hour: self.hour,
+                        minute: self.minute,
+                        achievement: achievement,
+                        failure: failure)
+            
+            if let resultGoal = goal {
+                mainViewController.goal = resultGoal
+            }
         }
     }
 }
