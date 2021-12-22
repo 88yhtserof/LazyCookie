@@ -26,16 +26,14 @@ class SettingViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let timePickerViewController = segue.destination as? TimePickerViewController {
-            timePickerViewController.timePickerDelegate = self
-        }
-        
         let goalString = textGoal.text ?? ""
         let achievement = textFieldAchievement.text ?? ""
         let failure = textFieldFailure.text ?? ""
         
-        
-        
+        if let timePickerViewController = segue.destination as? TimePickerViewController {
+            timePickerViewController.timePickerDelegate = self
+        }
+
         if let mainViewController = segue.destination as? MainViewController {
             goal = Goal(goal: goalString,
                         hour: self.hour,
