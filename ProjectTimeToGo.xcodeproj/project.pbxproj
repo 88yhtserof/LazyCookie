@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A2F96BF276F4BF400BEE55B /* NanumBarunpenB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9A2F96B7276F097100BEE55B /* NanumBarunpenB.otf */; };
+		9A2F96C0276F4BF700BEE55B /* NanumBarunpenR.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9A2F96B8276F097100BEE55B /* NanumBarunpenR.otf */; };
+		9A2F96C2276F503E00BEE55B /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F96C1276F503E00BEE55B /* CustomView.swift */; };
+		9A2F96C4276F590D00BEE55B /* TimePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F96C3276F590D00BEE55B /* TimePickerViewController.swift */; };
 		9A6B37DB276C3ADF000188F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6B37DA276C3ADF000188F5 /* AppDelegate.swift */; };
 		9A6B37DD276C3ADF000188F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6B37DC276C3ADF000188F5 /* SceneDelegate.swift */; };
 		9A6B37DF276C3ADF000188F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6B37DE276C3ADF000188F5 /* ViewController.swift */; };
@@ -15,9 +19,16 @@
 		9A6B37E7276C3AE0000188F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6B37E5276C3AE0000188F5 /* LaunchScreen.storyboard */; };
 		9A6B37F9276C4DAA000188F5 /* SDSamliphopangcheOutline.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9A6B37F7276C4DAA000188F5 /* SDSamliphopangcheOutline.otf */; };
 		9A6B37FC276C4E29000188F5 /* SDSamliphopangcheBasic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9A6B37F8276C4DAA000188F5 /* SDSamliphopangcheBasic.otf */; };
+		9AD27C4E2771A767007B936B /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD27C4D2771A767007B936B /* Goal.swift */; };
+		9AD27C502771B2F6007B936B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD27C4F2771B2F6007B936B /* MainViewController.swift */; };
+		9AEAC207276E1957007F9C82 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEAC206276E1957007F9C82 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A2F96B7276F097100BEE55B /* NanumBarunpenB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunpenB.otf; sourceTree = "<group>"; };
+		9A2F96B8276F097100BEE55B /* NanumBarunpenR.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunpenR.otf; sourceTree = "<group>"; };
+		9A2F96C1276F503E00BEE55B /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		9A2F96C3276F590D00BEE55B /* TimePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerViewController.swift; sourceTree = "<group>"; };
 		9A6B37D7276C3ADF000188F5 /* ProjectTimeToGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectTimeToGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6B37DA276C3ADF000188F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A6B37DC276C3ADF000188F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +39,9 @@
 		9A6B37E8276C3AE0000188F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A6B37F7276C4DAA000188F5 /* SDSamliphopangcheOutline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SDSamliphopangcheOutline.otf; sourceTree = "<group>"; };
 		9A6B37F8276C4DAA000188F5 /* SDSamliphopangcheBasic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SDSamliphopangcheBasic.otf; sourceTree = "<group>"; };
+		9AD27C4D2771A767007B936B /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		9AD27C4F2771B2F6007B936B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9AEAC206276E1957007F9C82 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +82,11 @@
 				9A6B37E3276C3AE0000188F5 /* Assets.xcassets */,
 				9A6B37E5276C3AE0000188F5 /* LaunchScreen.storyboard */,
 				9A6B37E8276C3AE0000188F5 /* Info.plist */,
+				9AEAC206276E1957007F9C82 /* SettingViewController.swift */,
+				9A2F96C1276F503E00BEE55B /* CustomView.swift */,
+				9A2F96C3276F590D00BEE55B /* TimePickerViewController.swift */,
+				9AD27C4D2771A767007B936B /* Goal.swift */,
+				9AD27C4F2771B2F6007B936B /* MainViewController.swift */,
 			);
 			path = ProjectTimeToGo;
 			sourceTree = "<group>";
@@ -75,6 +94,8 @@
 		9A6B37F6276C4D67000188F5 /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				9A2F96B7276F097100BEE55B /* NanumBarunpenB.otf */,
+				9A2F96B8276F097100BEE55B /* NanumBarunpenR.otf */,
 				9A6B37F8276C4DAA000188F5 /* SDSamliphopangcheBasic.otf */,
 				9A6B37F7276C4DAA000188F5 /* SDSamliphopangcheOutline.otf */,
 			);
@@ -142,6 +163,8 @@
 				9A6B37FC276C4E29000188F5 /* SDSamliphopangcheBasic.otf in Resources */,
 				9A6B37F9276C4DAA000188F5 /* SDSamliphopangcheOutline.otf in Resources */,
 				9A6B37E4276C3AE0000188F5 /* Assets.xcassets in Resources */,
+				9A2F96BF276F4BF400BEE55B /* NanumBarunpenB.otf in Resources */,
+				9A2F96C0276F4BF700BEE55B /* NanumBarunpenR.otf in Resources */,
 				9A6B37E2276C3ADF000188F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,9 +176,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A2F96C2276F503E00BEE55B /* CustomView.swift in Sources */,
+				9A2F96C4276F590D00BEE55B /* TimePickerViewController.swift in Sources */,
 				9A6B37DF276C3ADF000188F5 /* ViewController.swift in Sources */,
 				9A6B37DB276C3ADF000188F5 /* AppDelegate.swift in Sources */,
 				9A6B37DD276C3ADF000188F5 /* SceneDelegate.swift in Sources */,
+				9AEAC207276E1957007F9C82 /* SettingViewController.swift in Sources */,
+				9AD27C4E2771A767007B936B /* Goal.swift in Sources */,
+				9AD27C502771B2F6007B936B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
