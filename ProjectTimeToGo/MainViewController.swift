@@ -21,7 +21,7 @@ class MainViewController: UIViewController {
     
     func addLayerCircleTimer() {
         let circlePath = UIBezierPath(arcCenter: view.center,
-                                      radius: 150,
+                                      radius: 130,
                                       startAngle: -(.pi/2),
                                       endAngle: .pi * 2,
                                       clockwise: true)
@@ -29,12 +29,12 @@ class MainViewController: UIViewController {
         let trackCircle = CAShapeLayer()
         trackCircle.fillColor = UIColor.clear.cgColor
         trackCircle.path = circlePath.cgPath
-        trackCircle.lineWidth = 30
-        trackCircle.strokeColor = UIColor.systemGray2.cgColor
+        trackCircle.lineWidth = 40
+        trackCircle.strokeColor = UIColor(displayP3Red: 252/255, green: 251/255, blue: 238/255, alpha: 1).cgColor
         
         shap.path = circlePath.cgPath
-        shap.lineWidth = 15
-        shap.strokeColor = UIColor.black.cgColor
+        shap.lineWidth = 20
+        shap.strokeColor = UIColor(displayP3Red: 239/255, green: 155/255, blue: 131/255, alpha: 1).cgColor
         shap.fillColor = UIColor.clear.cgColor
         
         view.layer.addSublayer(trackCircle)
