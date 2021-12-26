@@ -19,6 +19,7 @@
 		9A6B37FC276C4E29000188F5 /* SDSamliphopangcheBasic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9A6B37F8276C4DAA000188F5 /* SDSamliphopangcheBasic.otf */; };
 		9AD27C4E2771A767007B936B /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD27C4D2771A767007B936B /* Goal.swift */; };
 		9AD27C502771B2F6007B936B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD27C4F2771B2F6007B936B /* MainViewController.swift */; };
+		9ADBAD252778702300576EC8 /* mainpage_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ADBAD242778702300576EC8 /* mainpage_background.png */; };
 		9AE718FD2774083F00D04C17 /* NanumBarunpenB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9A2F96B7276F097100BEE55B /* NanumBarunpenB.otf */; };
 		9AE718FE2774084100D04C17 /* NanumBarunpenR.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9A2F96B8276F097100BEE55B /* NanumBarunpenR.otf */; };
 		9AEAC207276E1957007F9C82 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEAC206276E1957007F9C82 /* SettingViewController.swift */; };
@@ -41,6 +42,7 @@
 		9A6B37F8276C4DAA000188F5 /* SDSamliphopangcheBasic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SDSamliphopangcheBasic.otf; sourceTree = "<group>"; };
 		9AD27C4D2771A767007B936B /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
 		9AD27C4F2771B2F6007B936B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9ADBAD242778702300576EC8 /* mainpage_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainpage_background.png; sourceTree = "<group>"; };
 		9AEAC206276E1957007F9C82 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +76,7 @@
 		9A6B37D9276C3ADF000188F5 /* ProjectTimeToGo */ = {
 			isa = PBXGroup;
 			children = (
+				9ADBAD2127786E7500576EC8 /* image */,
 				9A6B37F6276C4D67000188F5 /* Font */,
 				9A6B37DA276C3ADF000188F5 /* AppDelegate.swift */,
 				9A6B37DC276C3ADF000188F5 /* SceneDelegate.swift */,
@@ -100,6 +103,14 @@
 				9A6B37F7276C4DAA000188F5 /* SDSamliphopangcheOutline.otf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		9ADBAD2127786E7500576EC8 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				9ADBAD242778702300576EC8 /* mainpage_background.png */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +173,7 @@
 				9A6B37E7276C3AE0000188F5 /* LaunchScreen.storyboard in Resources */,
 				9A6B37FC276C4E29000188F5 /* SDSamliphopangcheBasic.otf in Resources */,
 				9A6B37F9276C4DAA000188F5 /* SDSamliphopangcheOutline.otf in Resources */,
+				9ADBAD252778702300576EC8 /* mainpage_background.png in Resources */,
 				9A6B37E4276C3AE0000188F5 /* Assets.xcassets in Resources */,
 				9AE718FD2774083F00D04C17 /* NanumBarunpenB.otf in Resources */,
 				9AE718FE2774084100D04C17 /* NanumBarunpenR.otf in Resources */,

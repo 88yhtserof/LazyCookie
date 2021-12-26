@@ -9,30 +9,31 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+    @IBOutlet weak var btnStart: UIButton!
+    
     var goal: Goal?
     let shap = CAShapeLayer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.hidesBackButton = true
-        
-        let imageCookie : UIImageView = UIImageView(frame: CGRect(x: view.frame.midX, y: view.frame.height-550, width: 100, height: 100))
-        imageCookie.image = UIImage(named: "firstpage.png")
+        self.navigationController?.isNavigationBarHidden = true
+        self.btnStart.layer.cornerRadius = 10
+        self.btnStart.layer.shadowOffset = CGSize(width: 0, height: 4)
+        self.btnStart.layer.shadowOpacity = 0.2
         
         addLayerCircleTimer()
-        view.addSubview(imageCookie)
     }
     
     func addLayerCircleTimer() {
-        let circlePath = UIBezierPath(arcCenter: CGPoint(x: view.frame.width/2, y: view.frame.height-550),
-                                      radius: 130,
+        let circlePath = UIBezierPath(arcCenter: view.center,
+                                      radius: view.frame.height/7,
                                       startAngle: -(.pi/2),
                                       endAngle: .pi * 2,
                                       clockwise: true)
         
         let trackCircle = CAShapeLayer()
-        trackCircle.fillColor = UIColor(displayP3Red: 252/255, green: 251/255, blue: 238/255, alpha: 1).cgColor
+        trackCircle.fillColor = UIColor.clear.cgColor
         trackCircle.path = circlePath.cgPath
         trackCircle.lineWidth = 40
         trackCircle.strokeColor = UIColor(displayP3Red: 252/255, green: 251/255, blue: 238/255, alpha: 1).cgColor

@@ -298,48 +298,114 @@
             <objects>
                 <viewController id="BLf-cN-wxo" customClass="MainViewController" customModule="ProjectTimeToGo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U6W-cW-7Da">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="01: 30:24" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cua-RB-tOi">
-                                <rect key="frame" x="153" y="527" width="109" height="39"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainpage_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="JEu-aq-Qcg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="145"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="145" id="FHM-p1-BwM"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lSQ-U1-73c">
+                                <rect key="frame" x="132" y="373" width="150" height="150"/>
+                                <color key="tintColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="9Tf-0E-gwI"/>
+                                    <constraint firstAttribute="width" secondItem="lSQ-U1-73c" secondAttribute="height" multiplier="1:1" id="DUP-1C-8jR"/>
+                                    <constraint firstAttribute="height" constant="150" id="SqF-kx-kW7"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EGy-77-zVX">
+                                <rect key="frame" x="25" y="164" width="364" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="런닝머신 1시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTV-2b-rH1">
+                                        <rect key="frame" x="48" y="0.0" width="268" height="22"/>
+                                        <fontDescription key="fontDescription" name="SDSamliphopangcheBasic" family="Sandoll Samliphopangche" pointSize="50"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6w6-jZ-Chn" customClass="CustomView" customModule="ProjectTimeToGo" customModuleProvider="target">
+                                        <rect key="frame" x="94" y="30" width="176" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2시간 30분" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJ3-ub-Kd2">
+                                                <rect key="frame" x="58" y="15" width="60.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="15"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.98431372549999996" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="UJ3-ub-Kd2" firstAttribute="centerY" secondItem="6w6-jZ-Chn" secondAttribute="centerY" id="qoK-x0-gxt"/>
+                                            <constraint firstItem="UJ3-ub-Kd2" firstAttribute="centerX" secondItem="6w6-jZ-Chn" secondAttribute="centerX" id="rt9-Z5-cBP"/>
+                                            <constraint firstAttribute="width" secondItem="6w6-jZ-Chn" secondAttribute="height" multiplier="95:27" id="tEs-7l-84K"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EGy-77-zVX" secondAttribute="height" multiplier="91:20" id="dbz-UO-2YC"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="VYq-QN-usc">
+                                <rect key="frame" x="80" y="654.5" width="254" height="97.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01: 30:24" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cua-RB-tOi">
+                                        <rect key="frame" x="73" y="0.0" width="108.5" height="38.5"/>
+                                        <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="30"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnE-VP-aB2">
+                                        <rect key="frame" x="1.5" y="55.5" width="251" height="42"/>
+                                        <color key="backgroundColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="EnE-VP-aB2" secondAttribute="height" multiplier="281:47" id="jrz-GI-hdi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="23"/>
+                                        <state key="normal" title="시작">
+                                            <color key="titleColor" red="0.98823529409999999" green="0.98431372549999996" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cae-OR-3Kt">
+                                <rect key="frame" x="366" y="60" width="23" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="30"/>
-                                <color key="textColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2시간 30분" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJ3-ub-Kd2">
-                                <rect key="frame" x="159" y="128" width="96" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="NanumBarunpenOTF" family="NanumBarunpenOTF" pointSize="20"/>
-                                <color key="textColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="런닝머신 1시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTV-2b-rH1">
-                                <rect key="frame" x="73" y="70" width="268" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SDSamliphopangcheBasic" family="Sandoll Samliphopangche" pointSize="50"/>
-                                <color key="textColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnE-VP-aB2">
-                                <rect key="frame" x="94" y="590" width="224" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="시작">
-                                    <color key="titleColor" red="0.98823529409999999" green="0.98431372549999996" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="x.circle.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
                                 </state>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NRB-08-eGH"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lSQ-U1-73c" firstAttribute="centerY" secondItem="U6W-cW-7Da" secondAttribute="centerY" id="1oJ-SC-BBE"/>
+                            <constraint firstItem="NRB-08-eGH" firstAttribute="trailing" secondItem="EGy-77-zVX" secondAttribute="trailing" constant="25" id="2sX-Mu-PUQ"/>
+                            <constraint firstItem="NRB-08-eGH" firstAttribute="bottom" secondItem="VYq-QN-usc" secondAttribute="bottom" constant="110" id="4aP-dN-peA"/>
+                            <constraint firstItem="JEu-aq-Qcg" firstAttribute="trailing" secondItem="NRB-08-eGH" secondAttribute="trailing" id="GhN-I4-c7z"/>
+                            <constraint firstItem="JEu-aq-Qcg" firstAttribute="leading" secondItem="NRB-08-eGH" secondAttribute="leading" id="QoQ-BI-DMZ"/>
+                            <constraint firstItem="NRB-08-eGH" firstAttribute="trailing" secondItem="VYq-QN-usc" secondAttribute="trailing" constant="80" id="Xq3-nS-mcr"/>
+                            <constraint firstItem="lSQ-U1-73c" firstAttribute="centerX" secondItem="U6W-cW-7Da" secondAttribute="centerX" id="hAb-GT-MZA"/>
+                            <constraint firstItem="VYq-QN-usc" firstAttribute="leading" secondItem="NRB-08-eGH" secondAttribute="leading" constant="80" id="hIg-PK-qxM"/>
+                            <constraint firstItem="JEu-aq-Qcg" firstAttribute="top" secondItem="U6W-cW-7Da" secondAttribute="top" id="hUq-KS-ebo"/>
+                            <constraint firstItem="EGy-77-zVX" firstAttribute="leading" secondItem="NRB-08-eGH" secondAttribute="leading" constant="25" id="orB-s6-AW8"/>
+                            <constraint firstItem="EGy-77-zVX" firstAttribute="top" secondItem="JEu-aq-Qcg" secondAttribute="bottom" constant="19" id="yZw-oF-cJv"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VEk-UJ-5Nt">
                         <barButtonItem key="rightBarButtonItem" title="Item" id="ZQB-GJ-Yh6">
                             <imageReference key="image" image="x.circle.fill" catalog="system" symbolScale="large"/>
                         </barButtonItem>
                     </navigationItem>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="btnStart" destination="EnE-VP-aB2" id="biU-Cc-asb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qml-Cm-Lpw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -410,6 +476,7 @@
     <resources>
         <image name="ellipsis.bubble.fill" catalog="system" width="128" height="110"/>
         <image name="firstpage" width="512" height="512"/>
+        <image name="mainpage_background.png" width="558.54547119140625" height="558.54547119140625"/>
         <image name="x.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
