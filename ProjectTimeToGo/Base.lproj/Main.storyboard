@@ -301,27 +301,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainpage_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="JEu-aq-Qcg">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="145"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="mainpage_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="JEu-aq-Qcg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="145" id="FHM-p1-BwM"/>
+                                    <constraint firstAttribute="height" constant="120" id="FHM-p1-BwM"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lSQ-U1-73c">
-                                <rect key="frame" x="132" y="373" width="150" height="150"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lSQ-U1-73c">
+                                <rect key="frame" x="132" y="373.5" width="150" height="149"/>
                                 <color key="tintColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="9Tf-0E-gwI"/>
                                     <constraint firstAttribute="width" secondItem="lSQ-U1-73c" secondAttribute="height" multiplier="1:1" id="DUP-1C-8jR"/>
-                                    <constraint firstAttribute="height" constant="150" id="SqF-kx-kW7"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EGy-77-zVX">
-                                <rect key="frame" x="25" y="164" width="364" height="80"/>
+                                <rect key="frame" x="25" y="140" width="364" height="80"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="런닝머신 1시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTV-2b-rH1">
-                                        <rect key="frame" x="48" y="0.0" width="268" height="22"/>
-                                        <fontDescription key="fontDescription" name="SDSamliphopangcheBasic" family="Sandoll Samliphopangche" pointSize="50"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="런닝머신 1시간" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="nTV-2b-rH1">
+                                        <rect key="frame" x="75" y="0.0" width="214.5" height="22"/>
+                                        <fontDescription key="fontDescription" name="SDSamliphopangcheBasic" family="Sandoll Samliphopangche" pointSize="40"/>
                                         <color key="textColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -372,12 +370,12 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cae-OR-3Kt">
-                                <rect key="frame" x="366" y="60" width="23" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cae-OR-3Kt">
+                                <rect key="frame" x="347" y="55" width="47" height="34"/>
                                 <color key="tintColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="x.circle.fill" catalog="system">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
+                                <state key="normal" title="나가기">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
                                 </state>
                             </button>
                         </subviews>
@@ -387,14 +385,18 @@
                             <constraint firstItem="lSQ-U1-73c" firstAttribute="centerY" secondItem="U6W-cW-7Da" secondAttribute="centerY" id="1oJ-SC-BBE"/>
                             <constraint firstItem="NRB-08-eGH" firstAttribute="trailing" secondItem="EGy-77-zVX" secondAttribute="trailing" constant="25" id="2sX-Mu-PUQ"/>
                             <constraint firstItem="NRB-08-eGH" firstAttribute="bottom" secondItem="VYq-QN-usc" secondAttribute="bottom" constant="110" id="4aP-dN-peA"/>
+                            <constraint firstItem="Cae-OR-3Kt" firstAttribute="top" secondItem="NRB-08-eGH" secondAttribute="top" constant="11" id="CVf-1p-cqe"/>
+                            <constraint firstItem="lSQ-U1-73c" firstAttribute="leading" secondItem="NRB-08-eGH" secondAttribute="leading" constant="132" id="GWf-Ie-fmw"/>
                             <constraint firstItem="JEu-aq-Qcg" firstAttribute="trailing" secondItem="NRB-08-eGH" secondAttribute="trailing" id="GhN-I4-c7z"/>
                             <constraint firstItem="JEu-aq-Qcg" firstAttribute="leading" secondItem="NRB-08-eGH" secondAttribute="leading" id="QoQ-BI-DMZ"/>
                             <constraint firstItem="NRB-08-eGH" firstAttribute="trailing" secondItem="VYq-QN-usc" secondAttribute="trailing" constant="80" id="Xq3-nS-mcr"/>
-                            <constraint firstItem="lSQ-U1-73c" firstAttribute="centerX" secondItem="U6W-cW-7Da" secondAttribute="centerX" id="hAb-GT-MZA"/>
+                            <constraint firstItem="lSQ-U1-73c" firstAttribute="top" secondItem="EGy-77-zVX" secondAttribute="bottom" priority="750" constant="150" id="aeF-JI-H0x"/>
+                            <constraint firstItem="NRB-08-eGH" firstAttribute="trailing" secondItem="lSQ-U1-73c" secondAttribute="trailing" constant="132" id="dcr-j0-vzR"/>
                             <constraint firstItem="VYq-QN-usc" firstAttribute="leading" secondItem="NRB-08-eGH" secondAttribute="leading" constant="80" id="hIg-PK-qxM"/>
                             <constraint firstItem="JEu-aq-Qcg" firstAttribute="top" secondItem="U6W-cW-7Da" secondAttribute="top" id="hUq-KS-ebo"/>
+                            <constraint firstItem="NRB-08-eGH" firstAttribute="trailing" secondItem="Cae-OR-3Kt" secondAttribute="trailing" constant="20" id="ka7-7l-B5t"/>
                             <constraint firstItem="EGy-77-zVX" firstAttribute="leading" secondItem="NRB-08-eGH" secondAttribute="leading" constant="25" id="orB-s6-AW8"/>
-                            <constraint firstItem="EGy-77-zVX" firstAttribute="top" secondItem="JEu-aq-Qcg" secondAttribute="bottom" constant="19" id="yZw-oF-cJv"/>
+                            <constraint firstItem="EGy-77-zVX" firstAttribute="top" secondItem="JEu-aq-Qcg" secondAttribute="bottom" constant="20" id="yZw-oF-cJv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VEk-UJ-5Nt">
@@ -405,6 +407,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="btnStart" destination="EnE-VP-aB2" id="biU-Cc-asb"/>
+                        <outlet property="viewTop" destination="JEu-aq-Qcg" id="stT-UN-eEC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qml-Cm-Lpw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -477,6 +480,7 @@
         <image name="ellipsis.bubble.fill" catalog="system" width="128" height="110"/>
         <image name="firstpage" width="512" height="512"/>
         <image name="mainpage_background.png" width="558.54547119140625" height="558.54547119140625"/>
+        <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
         <image name="x.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

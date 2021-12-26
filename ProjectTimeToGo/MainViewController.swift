@@ -10,6 +10,7 @@ import UIKit
 class MainViewController: UIViewController {
     
     @IBOutlet weak var btnStart: UIButton!
+    @IBOutlet weak var viewTop: UIImageView!
     
     var goal: Goal?
     let shap = CAShapeLayer()
@@ -17,7 +18,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.isNavigationBarHidden = true
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.btnStart.layer.cornerRadius = 10
         self.btnStart.layer.shadowOffset = CGSize(width: 0, height: 4)
         self.btnStart.layer.shadowOpacity = 0.2
