@@ -47,6 +47,7 @@ class MainViewController: UIViewController {
         shap.lineWidth = 20
         shap.strokeColor = UIColor(displayP3Red: 243/255, green: 220/255, blue: 152/255, alpha: 1).cgColor
         shap.fillColor = UIColor.clear.cgColor
+        shap.strokeEnd = 0
         
         view.layer.addSublayer(trackCircle)
         view.layer.addSublayer(shap)
@@ -68,5 +69,18 @@ class MainViewController: UIViewController {
         alert.addAction(actionStay)
         
         present(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func tapBtnStart(_ sender: UIButton) {
+        setCircleAnimation()
+    }
+    
+    func setCircleAnimation() {
+        let animation = CABasicAnimation(keyPath: "strokeEnd")
+        animation.toValue = 1
+        animation.duration = 3
+        animation.isRemovedOnCompletion = false
+        animation.fillMode = .forwards
+        shap.add(animation, forKey: "animation")
     }
 }
