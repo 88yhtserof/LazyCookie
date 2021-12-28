@@ -57,8 +57,8 @@ class MainViewController: UIViewController {
             나가면 지금까지 기록한 시간이 초기화됩니다.
             정말 나가시겠습니까?
             """
-        let alert = UIAlertController(title: "나가기", message: message, preferredStyle: UIAlertController.Style.alert)
-        let actionLeave = UIAlertAction(title: "네", style: UIAlertAction.Style.default) {
+        let alert = UIAlertController(title: "주의", message: message, preferredStyle: UIAlertController.Style.alert)
+        let actionLeave = UIAlertAction(title: "나가기", style: UIAlertAction.Style.default) {
             _ in
             self.navigationController?.popToRootViewController(animated: true)
         }
