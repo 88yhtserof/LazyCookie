@@ -26,6 +26,10 @@ class MainViewController: UIViewController {
         addLayerCircleTimer()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
     func addLayerCircleTimer() {
         let circlePath = UIBezierPath(arcCenter: view.center,
                                       radius: view.frame.height/7,
@@ -46,5 +50,23 @@ class MainViewController: UIViewController {
         
         view.layer.addSublayer(trackCircle)
         view.layer.addSublayer(shap)
+    }
+    
+    @IBAction func tapBtnLeave(_ sender: UIButton) {
+        let message = """
+            나가면 지금까지 기록한 시간이 초기화됩니다.
+            정말 나가시겠습니까?
+            """
+        let alert = UIAlertController(title: "나가기", message: message, preferredStyle: UIAlertController.Style.alert)
+        let actionLeave = UIAlertAction(title: "네", style: UIAlertAction.Style.default) {
+            _ in
+            self.navigationController?.popToRootViewController(animated: true)
+        }
+        let actionStay = UIAlertAction(title: "계속하기", style: UIAlertAction.Style.default, handler: nil)
+        
+        alert.addAction(actionLeave)
+        alert.addAction(actionStay)
+        
+        present(alert, animated: true, completion: nil)
     }
 }
