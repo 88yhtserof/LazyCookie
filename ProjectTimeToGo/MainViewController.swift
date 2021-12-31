@@ -11,9 +11,13 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var btnStart: UIButton!
     @IBOutlet weak var viewTop: UIImageView!
+    @IBOutlet weak var lblTimer: UILabel!
     
     var goal: Goal?
     let shap = CAShapeLayer()
+    var duration: Double = 10.0
+    var timer = Timer()
+    var count = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +52,7 @@ class MainViewController: UIViewController {
         shap.strokeColor = UIColor(displayP3Red: 243/255, green: 220/255, blue: 152/255, alpha: 1).cgColor
         shap.fillColor = UIColor.clear.cgColor
         shap.strokeEnd = 0
+        shap.lineCap = .round
         
         view.layer.addSublayer(trackCircle)
         view.layer.addSublayer(shap)
@@ -72,15 +77,34 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func tapBtnStart(_ sender: UIButton) {
-        setCircleAnimation()
+        let timeSelector: Selector = #selector(MainViewController.updateTime)
+        let interval = 1.0
+        self.timer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: timeSelector, userInfo: nil, repeats: true)
+        
+        DispatchQueue.main.async {
+            Thread.sleep(forTimeInterval: 1.0)
+            self.setCircleAnimation()
+        }
     }
     
     func setCircleAnimation() {
         let animation = CABasicAnimation(keyPath: "strokeEnd")
         animation.toValue = 1
-        animation.duration = 3
+        animation.duration = duration
         animation.isRemovedOnCompletion = false
         animation.fillMode = .forwards
         shap.add(animation, forKey: "animation")
+    }
+    
+    @objc func updateTime() {
+        self.count += 1
+        
+        if self.count >= Int(self.duration) {
+            self.timer.invalidate()
+        }
+        
+        DispatchQueue.main.async {
+            self.lblTimer.text = "\(self.count)"
+        }
     }
 }

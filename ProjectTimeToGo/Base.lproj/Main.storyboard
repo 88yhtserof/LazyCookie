@@ -411,6 +411,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="btnStart" destination="EnE-VP-aB2" id="biU-Cc-asb"/>
+                        <outlet property="lblTimer" destination="cua-RB-tOi" id="1ay-9K-pyl"/>
                         <outlet property="viewTop" destination="JEu-aq-Qcg" id="stT-UN-eEC"/>
                     </connections>
                 </viewController>
