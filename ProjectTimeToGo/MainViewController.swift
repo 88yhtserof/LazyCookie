@@ -38,7 +38,7 @@ class MainViewController: UIViewController {
         let circlePath = UIBezierPath(arcCenter: view.center,
                                       radius: view.frame.height/7,
                                       startAngle: -(.pi/2),
-                                      endAngle: .pi * 2,
+                                      endAngle: .pi * 2 - (.pi/2),
                                       clockwise: true)
         
         let trackCircle = CAShapeLayer()
@@ -81,10 +81,7 @@ class MainViewController: UIViewController {
         let interval = 1.0
         self.timer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: timeSelector, userInfo: nil, repeats: true)
         
-        DispatchQueue.main.async {
-            Thread.sleep(forTimeInterval: 1.0)
-            self.setCircleAnimation()
-        }
+        self.setCircleAnimation()
     }
     
     func setCircleAnimation() {
