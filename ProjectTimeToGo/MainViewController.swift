@@ -59,19 +59,12 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func tapBtnLeave(_ sender: UIButton) {
-        setAlert(title: "나가기",
-                 message: "홈 화면으로 되돌아가시겠습니까?",
-                 titleYes: "네",
-                 titleNo: "아니오")
-    }
-    
-    func setAlert(title: String, message: String, titleYes: String, titleNo: String) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
-        let actionYes = UIAlertAction(title: titleYes, style: UIAlertAction.Style.default) {
+        let alert = UIAlertController(title: "나가기", message: "홈 화면으로 되돌아가시겠습니까?", preferredStyle: UIAlertController.Style.alert)
+        let actionYes = UIAlertAction(title: "네", style: UIAlertAction.Style.default) {
             _ in
             self.navigationController?.popToRootViewController(animated: true)
         }
-        let actionNo = UIAlertAction(title: titleNo, style: UIAlertAction.Style.default, handler: nil)
+        let actionNo = UIAlertAction(title: "아니오", style: UIAlertAction.Style.default, handler: nil)
         
         alert.addAction(actionYes)
         alert.addAction(actionNo)
@@ -84,16 +77,9 @@ class MainViewController: UIViewController {
         let interval = 1.0
         self.timer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: timeSelector, userInfo: nil, repeats: true)
         
+        self.btnStart.isEnabled = false
+        self.btnStart.setTitleColor(.brown, for: .normal)
         self.setCircleAnimation()
-        
-        if self.btnStart.currentTitle == "시작" {
-            self.btnStart.setTitle("다시 시작", for: .normal)
-        }else {
-            setAlert(title: "주의",
-                     message: "기록된 시간이 초기화됩니다.",
-                     titleYes: "다시 시작",
-                     titleNo: "계속")
-        }
     }
     
     func setCircleAnimation() {
