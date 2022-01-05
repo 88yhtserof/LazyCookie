@@ -12,6 +12,8 @@ class MainViewController: UIViewController {
     @IBOutlet weak var btnStart: UIButton!
     @IBOutlet weak var viewTop: UIImageView!
     @IBOutlet weak var lblTimer: UILabel!
+    @IBOutlet weak var lblGoal: UILabel!
+    @IBOutlet weak var lblGoalTime: UILabel!
     
     var goal: Goal?
     let shap = CAShapeLayer()
@@ -28,6 +30,11 @@ class MainViewController: UIViewController {
         self.btnStart.layer.shadowOpacity = 0.2
         
         addLayerCircleTimer()
+        
+        if let goal = self.goal {
+            self.lblGoal.text = goal.goal
+            self.lblGoalTime.text = "\(goal.hour)시간 \(goal.minute)분"
+       }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
