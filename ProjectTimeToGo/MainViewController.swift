@@ -29,16 +29,19 @@ class MainViewController: UIViewController {
         self.btnStart.layer.shadowOffset = CGSize(width: 0, height: 4)
         self.btnStart.layer.shadowOpacity = 0.2
         
+        setData()
         addLayerCircleTimer()
-        
-        if let goal = self.goal {
-            self.lblGoal.text = goal.goal
-            self.lblGoalTime.text = "\(goal.hour)시간 \(goal.minute)분"
-       }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    func setData() {
+        if let goal = self.goal {
+            self.lblGoal.text = goal.goal
+            self.lblGoalTime.text = "\(goal.hour)시간 \(goal.minute)분"
+        }
     }
     
     func addLayerCircleTimer() {

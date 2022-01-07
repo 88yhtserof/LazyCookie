@@ -8,17 +8,23 @@
 import Foundation
 
 class Goal {
-    var goal: String
+    var goal: String = "목표 없다."
     var hour: Int
     var minute: Int
-    var achievement: String
-    var failure: String
+    var achievement: String = "짝짝짝"
+    var failure: String = "..."
     
     init(goal: String, hour: Int, minute: Int, achievement: String, failure: String) {
-        self.goal = goal
+        if !goal.isEmpty {
+            self.goal = goal
+        }
+        if !achievement.isEmpty {
+            self.achievement = achievement
+        }
+        if !failure.isEmpty {
+            self.failure = failure
+        }
         self.hour = hour
         self.minute = minute
-        self.achievement = achievement
-        self.failure = failure
     }
 }
