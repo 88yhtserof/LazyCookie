@@ -349,21 +349,21 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="VYq-QN-usc">
-                                <rect key="frame" x="80" y="643.5" width="254" height="148.5"/>
+                                <rect key="frame" x="80" y="656" width="254" height="136"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cua-RB-tOi">
-                                        <rect key="frame" x="75.5" y="0.0" width="103.5" height="38.5"/>
-                                        <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0시간 0분 0초" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cua-RB-tOi">
+                                        <rect key="frame" x="76" y="0.0" width="102" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="20"/>
                                         <color key="textColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnE-VP-aB2">
-                                        <rect key="frame" x="1.5" y="55.5" width="251" height="42"/>
+                                        <rect key="frame" x="0.0" y="42.5" width="254" height="42.5"/>
                                         <color key="backgroundColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="EnE-VP-aB2" secondAttribute="height" multiplier="281:47" id="jrz-GI-hdi"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="23"/>
+                                        <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="25"/>
                                         <state key="normal" title="시작">
                                             <color key="titleColor" red="0.98823529409999999" green="0.98431372549999996" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -372,7 +372,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cae-OR-3Kt">
-                                        <rect key="frame" x="103.5" y="114.5" width="47" height="34"/>
+                                        <rect key="frame" x="103.5" y="102" width="47" height="34"/>
                                         <color key="tintColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="나가기">
                                             <color key="titleColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

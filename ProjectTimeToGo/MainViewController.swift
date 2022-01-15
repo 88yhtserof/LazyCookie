@@ -17,7 +17,7 @@ class MainViewController: UIViewController {
     
     var goal: Goal?
     let shap = CAShapeLayer()
-    var duration: Double = 10.0
+    var duration: Double = 0.0
     var timer = Timer()
     var count = 0
 
@@ -41,6 +41,7 @@ class MainViewController: UIViewController {
         if let goal = self.goal {
             self.lblGoal.text = goal.goal
             self.lblGoalTime.text = "\(goal.hour)시간 \(goal.minute)분"
+            self.duration = Double((goal.hour * 60 + goal.minute)*60)
         }
     }
     
@@ -109,7 +110,10 @@ class MainViewController: UIViewController {
         }
         
         DispatchQueue.main.async {
-            self.lblTimer.text = "\(self.count)"
+            let hour: Int = self.count/(3600)
+            let minute: Int = (self.count%3600)/60
+            let second: Int = (self.count%60)
+            self.lblTimer.text = "\(hour)시간 \(minute)분 \(second)초"
         }
     }
 }
