@@ -421,6 +421,21 @@
             </objects>
             <point key="canvasLocation" x="944.92753623188412" y="1577.6785714285713"/>
         </scene>
+        <!--Result View Controller-->
+        <scene sceneID="KdW-Bw-2eX">
+            <objects>
+                <viewController storyboardIdentifier="ResultViewController" id="K6h-wz-zB4" customClass="ResultViewController" customModule="ProjectTimeToGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6kN-kB-QAT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Gnw-YA-EdV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e2F-fF-Or1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1664" y="1578"/>
+        </scene>
         <!--Time Picker View Controller-->
         <scene sceneID="N7Z-s7-Aso">
             <objects>

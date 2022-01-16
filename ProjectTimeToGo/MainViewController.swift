@@ -106,6 +106,16 @@ class MainViewController: UIViewController {
         self.count += 1
         
         if self.count >= Int(self.duration) {
+            let alert = UIAlertController(title: "목표 달성", message: "목표 시간을 달성했습니다.", preferredStyle: .alert)
+            let action = UIAlertAction(title: "쿠키 획득", style: .default){_ in
+                guard let ResultViewController = self.storyboard?.instantiateViewController(identifier: "ResultViewController") as? ResultViewController else{ return }
+                self.navigationController?.pushViewController(ResultViewController, animated: true)
+            }
+            action.setValue(UIColor.brown, forKey: "titleTextColor")
+            alert.addAction(action)
+            
+            present(alert, animated: true, completion: nil)
+            
             self.timer.invalidate()
         }
         
