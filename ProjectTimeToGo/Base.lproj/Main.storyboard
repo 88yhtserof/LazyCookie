@@ -411,6 +411,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="btnStart" destination="EnE-VP-aB2" id="biU-Cc-asb"/>
+                        <outlet property="imgCookie" destination="lSQ-U1-73c" id="L2g-Is-474"/>
                         <outlet property="lblGoal" destination="nTV-2b-rH1" id="qZo-CP-m02"/>
                         <outlet property="lblGoalTime" destination="UJ3-ub-Kd2" id="Moo-qg-hod"/>
                         <outlet property="lblTimer" destination="cua-RB-tOi" id="1ay-9K-pyl"/>
@@ -496,6 +497,71 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5nc-LZ-s21" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1663.7681159420292" y="812.94642857142856"/>
+        </scene>
+        <!--Cookie Details View Controller-->
+        <scene sceneID="VHM-nN-wYf">
+            <objects>
+                <viewController storyboardIdentifier="CookieDetailsViewController" id="vQY-rg-hoq" customClass="CookieDetailsViewController" customModule="ProjectTimeToGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="llS-Pz-Zcg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GYf-0K-TQf" customClass="CustomView" customModule="ProjectTimeToGo" customModuleProvider="target">
+                                <rect key="frame" x="50" y="226.5" width="314" height="443"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="365-gm-dyP">
+                                        <rect key="frame" x="25" y="20" width="264" height="383"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" image="main_cookie_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="o7L-ZY-Fva">
+                                                <rect key="frame" x="20" y="0.0" width="224" height="224"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="o7L-ZY-Fva" secondAttribute="height" multiplier="1:1" id="Kd8-mO-2Xs"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="쿠키 이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdy-bq-iLT">
+                                                <rect key="frame" x="90.5" y="230" width="83" height="32"/>
+                                                <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2h-Y8-7Dl">
+                                                <rect key="frame" x="0.0" y="268" width="264" height="115"/>
+                                                <string key="text">쿠키 설명이 들어갈 공간. 쿠키의 역사와 여러 중요하지 않은 설명쿠키 설명이 들어갈 공간. 쿠키의 역사와 여러 중요하지 않은 설명쿠키 설명이 들어갈 공간. 쿠키의 역사와 여러 중요하지 않은 설명쿠키 설명이 들어갈 공간. 쿠키의 역사와 여러 중요하지 않은 설명</string>
+                                                <fontDescription key="fontDescription" name="NanumBarunpenOTF" family="NanumBarunpenOTF" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="o7L-ZY-Fva" firstAttribute="leading" secondItem="365-gm-dyP" secondAttribute="leading" constant="20" id="GSd-TV-zfz"/>
+                                            <constraint firstAttribute="trailing" secondItem="o7L-ZY-Fva" secondAttribute="trailing" constant="20" id="lse-Cn-bMP"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="365-gm-dyP" firstAttribute="top" secondItem="GYf-0K-TQf" secondAttribute="top" constant="20" id="Kvz-my-Uh6"/>
+                                    <constraint firstItem="365-gm-dyP" firstAttribute="leading" secondItem="GYf-0K-TQf" secondAttribute="leading" constant="25" id="Vqy-98-GhN"/>
+                                    <constraint firstAttribute="bottom" secondItem="365-gm-dyP" secondAttribute="bottom" constant="40" id="btj-3S-Ktd"/>
+                                    <constraint firstAttribute="trailing" secondItem="365-gm-dyP" secondAttribute="trailing" constant="25" id="mlB-PD-PcP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Qn7-jj-kdy"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GYf-0K-TQf" firstAttribute="centerY" secondItem="llS-Pz-Zcg" secondAttribute="centerY" id="8vh-PP-l06"/>
+                            <constraint firstItem="Qn7-jj-kdy" firstAttribute="trailing" secondItem="GYf-0K-TQf" secondAttribute="trailing" constant="50" id="Bwg-WH-1mN"/>
+                            <constraint firstItem="GYf-0K-TQf" firstAttribute="leading" secondItem="Qn7-jj-kdy" secondAttribute="leading" constant="50" id="C71-yh-EoD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J1T-YK-LNX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="227.536231884058" y="1577.6785714285713"/>
         </scene>
     </scenes>
     <resources>

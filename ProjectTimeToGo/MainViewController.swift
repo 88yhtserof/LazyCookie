@@ -14,6 +14,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var lblTimer: UILabel!
     @IBOutlet weak var lblGoal: UILabel!
     @IBOutlet weak var lblGoalTime: UILabel!
+    @IBOutlet weak var imgCookie: UIImageView!
     
     var goal: Goal?
     let shap = CAShapeLayer()
@@ -31,6 +32,7 @@ class MainViewController: UIViewController {
         
         setData()
         addLayerCircleTimer()
+        tapImageCookie()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -125,5 +127,17 @@ class MainViewController: UIViewController {
             let second: Int = (self.count%60)
             self.lblTimer.text = "\(hour)시간 \(minute)분 \(second)초"
         }
+    }
+    
+    func tapImageCookie() {
+        let recognizer = UITapGestureRecognizer(target: self, action: #selector(actionTapImageCookie))
+        imgCookie.isUserInteractionEnabled = true
+        imgCookie.addGestureRecognizer(recognizer)
+    }
+    
+    @objc func actionTapImageCookie(){
+        guard let CookieDetailsViewController = self.storyboard?.instantiateViewController(identifier: "CookieDetailsViewController") as? CookieDetailsViewController else {return}
+        
+        self.present(CookieDetailsViewController, animated: true, completion: nil)
     }
 }
