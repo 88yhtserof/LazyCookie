@@ -507,34 +507,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GYf-0K-TQf" customClass="CustomView" customModule="ProjectTimeToGo" customModuleProvider="target">
-                                <rect key="frame" x="50" y="226.5" width="314" height="443"/>
+                                <rect key="frame" x="50" y="243" width="314" height="410.5"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="365-gm-dyP">
-                                        <rect key="frame" x="25" y="20" width="264" height="383"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="365-gm-dyP">
+                                        <rect key="frame" x="25" y="20" width="264" height="350.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" image="main_cookie_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="o7L-ZY-Fva">
-                                                <rect key="frame" x="20" y="0.0" width="224" height="224"/>
+                                                <rect key="frame" x="23" y="0.0" width="218" height="218"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="o7L-ZY-Fva" secondAttribute="height" multiplier="1:1" id="Kd8-mO-2Xs"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="쿠키 이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdy-bq-iLT">
-                                                <rect key="frame" x="90.5" y="230" width="83" height="32"/>
+                                                <rect key="frame" x="90.5" y="233" width="83" height="32"/>
                                                 <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2h-Y8-7Dl">
-                                                <rect key="frame" x="0.0" y="268" width="264" height="115"/>
-                                                <string key="text">쿠키 설명이 들어갈 공간. 쿠키의 역사와 여러 중요하지 않은 설명쿠키 설명이 들어갈 공간. 쿠키의 역사와 여러 중요하지 않은 설명쿠키 설명이 들어갈 공간. 쿠키의 역사와 여러 중요하지 않은 설명쿠키 설명이 들어갈 공간. 쿠키의 역사와 여러 중요하지 않은 설명</string>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="쿠키 설명이 들어갈 공간. 쿠키의 역사와 여러 중요하지 않은 설명쿠키 설명이 들어갈 공간. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2h-Y8-7Dl">
+                                                <rect key="frame" x="14" y="280" width="236.5" height="38.5"/>
                                                 <fontDescription key="fontDescription" name="NanumBarunpenOTF" family="NanumBarunpenOTF" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="궁금하지 않을 정보" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tC2-pH-qU1">
+                                                <rect key="frame" x="15" y="333.5" width="234" height="17"/>
+                                                <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="13"/>
+                                                <color key="textColor" red="0.61176472900000001" green="0.40784314269999999" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="highlightedColor" red="0.61176472900000001" green="0.40784314269999999" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="o7L-ZY-Fva" firstAttribute="leading" secondItem="365-gm-dyP" secondAttribute="leading" constant="20" id="GSd-TV-zfz"/>
-                                            <constraint firstAttribute="trailing" secondItem="o7L-ZY-Fva" secondAttribute="trailing" constant="20" id="lse-Cn-bMP"/>
+                                            <constraint firstAttribute="trailing" secondItem="tC2-pH-qU1" secondAttribute="trailing" constant="15" id="3uW-sU-wWy"/>
+                                            <constraint firstItem="c2h-Y8-7Dl" firstAttribute="top" secondItem="pdy-bq-iLT" secondAttribute="bottom" constant="15" id="Bk8-5O-rWV"/>
+                                            <constraint firstItem="o7L-ZY-Fva" firstAttribute="leading" secondItem="365-gm-dyP" secondAttribute="leading" constant="23" id="GSd-TV-zfz"/>
+                                            <constraint firstItem="tC2-pH-qU1" firstAttribute="leading" secondItem="365-gm-dyP" secondAttribute="leading" constant="15" id="aKE-GQ-z0Z"/>
+                                            <constraint firstAttribute="trailing" secondItem="o7L-ZY-Fva" secondAttribute="trailing" constant="23" id="lse-Cn-bMP"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
@@ -558,6 +566,11 @@
                             <constraint firstItem="GYf-0K-TQf" firstAttribute="leading" secondItem="Qn7-jj-kdy" secondAttribute="leading" constant="50" id="C71-yh-EoD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblCookieDetails" destination="c2h-Y8-7Dl" id="65h-Mk-xFF"/>
+                        <outlet property="lblCookieName" destination="pdy-bq-iLT" id="ds2-Vj-68k"/>
+                        <outlet property="lblInfo" destination="tC2-pH-qU1" id="kJr-Mr-6CZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J1T-YK-LNX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
