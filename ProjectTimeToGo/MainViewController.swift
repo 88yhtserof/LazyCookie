@@ -20,7 +20,7 @@ class MainViewController: UIViewController {
     let shap = CAShapeLayer()
     var duration: Double = 0.0
     var timer = Timer()
-    var count = 0
+    var count = 595
 
     override func viewDidLoad() {
         super.viewDidLoad()
