@@ -21,6 +21,9 @@ class MainViewController: UIViewController {
     var duration: Double = 0.0
     var timer = Timer()
     var count = 595
+    var achivementMessage: String = ""
+    var failureMessage: String = ""
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +47,8 @@ class MainViewController: UIViewController {
             self.lblGoal.text = goal.goal
             self.lblGoalTime.text = "\(goal.hour)시간 \(goal.minute)분"
             self.duration = Double((goal.hour * 60 + goal.minute)*60)
+            self.achivementMessage = goal.achievement
+            self.failureMessage = goal.failure
         }
     }
     
@@ -75,8 +80,7 @@ class MainViewController: UIViewController {
         let alert = UIAlertController(title: "나가기", message: "홈 화면으로 되돌아가시겠습니까?", preferredStyle: UIAlertController.Style.alert)
         let actionYes = UIAlertAction(title: "네", style: UIAlertAction.Style.default) {
             _ in
-            let message = "넌 큰일났다."
-            self.presentResultAlert(message: message)
+            self.presentResultAlert(message: self.failureMessage)
         }
         let actionNo = UIAlertAction(title: "아니오", style: UIAlertAction.Style.default, handler: nil)
         
@@ -111,8 +115,7 @@ class MainViewController: UIViewController {
         self.count += 1
         
         if self.count >= Int(self.duration) {
-            let message = "오늘도 수고했어!"
-            self.presentResultAlert(message: message)
+            self.presentResultAlert(message: self.achivementMessage)
             
             self.timer.invalidate()
         }
