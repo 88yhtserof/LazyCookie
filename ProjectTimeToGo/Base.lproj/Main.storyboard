@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -293,7 +292,7 @@
             </objects>
             <point key="canvasLocation" x="944.92753623188412" y="812.94642857142856"/>
         </scene>
-        <!--Main View Controller-->
+        <!-- -->
         <scene sceneID="pmB-dY-lpc">
             <objects>
                 <viewController id="BLf-cN-wxo" customClass="MainViewController" customModule="ProjectTimeToGo" customModuleProvider="target" sceneMemberID="viewController">
@@ -403,11 +402,7 @@
                             <constraint firstItem="EGy-77-zVX" firstAttribute="top" secondItem="JEu-aq-Qcg" secondAttribute="bottom" priority="750" constant="60" id="yZw-oF-cJv"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="VEk-UJ-5Nt">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="ZQB-GJ-Yh6">
-                            <imageReference key="image" image="x.circle.fill" catalog="system" symbolScale="large"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title=" " id="VEk-UJ-5Nt"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="btnStart" destination="EnE-VP-aB2" id="biU-Cc-asb"/>
@@ -421,21 +416,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qml-Cm-Lpw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="944.92753623188412" y="1577.6785714285713"/>
-        </scene>
-        <!--Result View Controller-->
-        <scene sceneID="KdW-Bw-2eX">
-            <objects>
-                <viewController storyboardIdentifier="ResultViewController" id="K6h-wz-zB4" customClass="ResultViewController" customModule="ProjectTimeToGo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="6kN-kB-QAT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Gnw-YA-EdV"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e2F-fF-Or1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1664" y="1578"/>
         </scene>
         <!--Time Picker View Controller-->
         <scene sceneID="N7Z-s7-Aso">
@@ -582,7 +562,6 @@
         <image name="firstpage" width="512" height="512"/>
         <image name="main_cookie_line.png" width="279.27273559570312" height="279.27273559570312"/>
         <image name="mainpage_background.png" width="558.54547119140625" height="558.54547119140625"/>
-        <image name="x.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

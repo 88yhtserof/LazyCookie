@@ -21,6 +21,9 @@ class MainViewController: UIViewController {
     var duration: Double = 0.0
     var timer = Timer()
     var count = 0
+    var achivementMessage: String = ""
+    var failureMessage: String = ""
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +47,8 @@ class MainViewController: UIViewController {
             self.lblGoal.text = goal.goal
             self.lblGoalTime.text = "\(goal.hour)시간 \(goal.minute)분"
             self.duration = Double((goal.hour * 60 + goal.minute)*60)
+            self.achivementMessage = goal.achievement
+            self.failureMessage = goal.failure
         }
     }
     
@@ -75,10 +80,12 @@ class MainViewController: UIViewController {
         let alert = UIAlertController(title: "나가기", message: "홈 화면으로 되돌아가시겠습니까?", preferredStyle: UIAlertController.Style.alert)
         let actionYes = UIAlertAction(title: "네", style: UIAlertAction.Style.default) {
             _ in
-            self.navigationController?.popToRootViewController(animated: true)
+            self.presentResultAlert(message: self.failureMessage)
         }
         let actionNo = UIAlertAction(title: "아니오", style: UIAlertAction.Style.default, handler: nil)
         
+        actionYes.setValue(UIColor(displayP3Red: 51/255, green: 36/255, blue: 18/255, alpha: 1), forKey: "TitleTextColor")
+        actionNo.setValue(UIColor(displayP3Red: 51/255, green: 36/255, blue: 18/255, alpha: 1), forKey: "TitleTextColor")
         alert.addAction(actionYes)
         alert.addAction(actionNo)
         
@@ -108,15 +115,7 @@ class MainViewController: UIViewController {
         self.count += 1
         
         if self.count >= Int(self.duration) {
-            let alert = UIAlertController(title: "목표 달성", message: "목표 시간을 달성했습니다.", preferredStyle: .alert)
-            let action = UIAlertAction(title: "쿠키 획득", style: .default){_ in
-                guard let ResultViewController = self.storyboard?.instantiateViewController(identifier: "ResultViewController") as? ResultViewController else{ return }
-                self.navigationController?.pushViewController(ResultViewController, animated: true)
-            }
-            action.setValue(UIColor.brown, forKey: "titleTextColor")
-            alert.addAction(action)
-            
-            present(alert, animated: true, completion: nil)
+            self.presentResultAlert(message: self.achivementMessage)
             
             self.timer.invalidate()
         }
@@ -139,5 +138,22 @@ class MainViewController: UIViewController {
         guard let CookieDetailsViewController = self.storyboard?.instantiateViewController(identifier: "CookieDetailsViewController") as? CookieDetailsViewController else {return}
         
         self.present(CookieDetailsViewController, animated: true, completion: nil)
+    }
+    
+    func presentResultAlert(message: String) {
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .alert)
+        let attributedString = NSMutableAttributedString(string: message)
+        let font = UIFont(name: "NanumBarunpenOTF", size: 16)
+        attributedString.addAttribute(.font, value: font!, range: (message as NSString).range(of: "\(message)"))
+        alert.setValue(attributedString, forKey: "attributedMessage")
+        
+        let action = UIAlertAction(title: "HOME", style: .default){
+            _ in
+            self.navigationController?.popToRootViewController(animated: true)
+        }
+        action.setValue(UIColor.brown, forKey: "titleTextColor")
+        alert.addAction(action)
+        
+        present(alert, animated: true, completion: nil)
     }
 }
