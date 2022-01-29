@@ -8,11 +8,11 @@
 import Foundation
 
 class Goal {
-    var goal: String = "목표 없다."
+    var goal: String = "목표 없다"
     var hour: Int
     var minute: Int
     var achievement: String = "짝짝짝"
-    var failure: String = "..."
+    var failure: String = "큰일났다"
     
     init(goal: String, hour: Int, minute: Int, achievement: String, failure: String) {
         if !goal.isEmpty {

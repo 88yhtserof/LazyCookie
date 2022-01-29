@@ -20,7 +20,7 @@ class MainViewController: UIViewController {
     let shap = CAShapeLayer()
     var duration: Double = 0.0
     var timer = Timer()
-    var count = 595
+    var count = 0
     var achivementMessage: String = ""
     var failureMessage: String = ""
     
