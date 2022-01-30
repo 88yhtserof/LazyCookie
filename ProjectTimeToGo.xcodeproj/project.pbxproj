@@ -19,6 +19,7 @@
 		9A6B37E7276C3AE0000188F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6B37E5276C3AE0000188F5 /* LaunchScreen.storyboard */; };
 		9AD0C0BE27A66266001F6B5C /* lazy_cookie_shop_owner.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AD0C0BD27A66266001F6B5C /* lazy_cookie_shop_owner.png */; };
 		9AD0C0C027A66892001F6B5C /* SDSamliphopangcheBasic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9AD0C0BF27A66892001F6B5C /* SDSamliphopangcheBasic.otf */; };
+		9AD0C0C227A6BBBE001F6B5C /* LazyOwnerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD0C0C127A6BBBE001F6B5C /* LazyOwnerDetailsViewController.swift */; };
 		9AD27C4E2771A767007B936B /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD27C4D2771A767007B936B /* Goal.swift */; };
 		9AD27C502771B2F6007B936B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD27C4F2771B2F6007B936B /* MainViewController.swift */; };
 		9AE5FD88279432770037FA63 /* CookieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE5FD87279432770037FA63 /* CookieDetailsViewController.swift */; };
@@ -44,6 +45,7 @@
 		9A6B37E8276C3AE0000188F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AD0C0BD27A66266001F6B5C /* lazy_cookie_shop_owner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lazy_cookie_shop_owner.png; sourceTree = "<group>"; };
 		9AD0C0BF27A66892001F6B5C /* SDSamliphopangcheBasic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SDSamliphopangcheBasic.otf; sourceTree = "<group>"; };
+		9AD0C0C127A6BBBE001F6B5C /* LazyOwnerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyOwnerDetailsViewController.swift; sourceTree = "<group>"; };
 		9AD27C4D2771A767007B936B /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
 		9AD27C4F2771B2F6007B936B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9AE5FD87279432770037FA63 /* CookieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieDetailsViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				9AD27C4D2771A767007B936B /* Goal.swift */,
 				9AD27C4F2771B2F6007B936B /* MainViewController.swift */,
 				9AE5FD87279432770037FA63 /* CookieDetailsViewController.swift */,
+				9AD0C0C127A6BBBE001F6B5C /* LazyOwnerDetailsViewController.swift */,
 			);
 			path = ProjectTimeToGo;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				9A2F96C2276F503E00BEE55B /* CustomView.swift in Sources */,
 				9AE5FD88279432770037FA63 /* CookieDetailsViewController.swift in Sources */,
 				9A2F96C4276F590D00BEE55B /* TimePickerViewController.swift in Sources */,
+				9AD0C0C227A6BBBE001F6B5C /* LazyOwnerDetailsViewController.swift in Sources */,
 				9A6B37DF276C3ADF000188F5 /* ViewController.swift in Sources */,
 				9A6B37DB276C3ADF000188F5 /* AppDelegate.swift in Sources */,
 				9A6B37DD276C3ADF000188F5 /* SceneDelegate.swift in Sources */,

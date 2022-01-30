@@ -19,6 +19,79 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Lazy Owner Details View Controller-->
+        <scene sceneID="P76-HO-snQ">
+            <objects>
+                <viewController storyboardIdentifier="LazyOwnerDetailsViewController" id="3mh-nn-LRz" customClass="LazyOwnerDetailsViewController" customModule="ProjectTimeToGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aaJ-1g-LQ3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pcb-7t-OR4" customClass="CustomView" customModule="ProjectTimeToGo" customModuleProvider="target">
+                                <rect key="frame" x="50" y="243" width="314" height="410.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VPI-hO-2T1">
+                                        <rect key="frame" x="25" y="20" width="264" height="350.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" image="lazy_cookie_shop_owner.png" translatesAutoresizingMaskIntoConstraints="NO" id="YKM-P6-mWT">
+                                                <rect key="frame" x="23" y="0.0" width="218" height="218"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="YKM-P6-mWT" secondAttribute="height" multiplier="1:1" id="gHZ-9z-fnh"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="게으른 쿠키 가게 사장님" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DF0-cS-GLF">
+                                                <rect key="frame" x="24.5" y="233" width="215.5" height="32"/>
+                                                <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="게으른 쿠키 가게 사장님은 오늘도 쿠키를 굽지 않고 가게에 나와 잠만 잡니다. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLt-rG-ico">
+                                                <rect key="frame" x="8" y="280" width="248" height="38.5"/>
+                                                <fontDescription key="fontDescription" name="NanumBarunpenOTF" family="NanumBarunpenOTF" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="쿠키는 누가 굽나요?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hfz-sP-rK9">
+                                                <rect key="frame" x="15" y="333.5" width="234" height="17"/>
+                                                <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="13"/>
+                                                <color key="textColor" red="0.61176472900000001" green="0.40784314269999999" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="highlightedColor" red="0.61176472900000001" green="0.40784314269999999" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="YKM-P6-mWT" secondAttribute="trailing" constant="23" id="2ST-36-hkV"/>
+                                            <constraint firstItem="XLt-rG-ico" firstAttribute="top" secondItem="DF0-cS-GLF" secondAttribute="bottom" constant="15" id="Oes-lb-3Bq"/>
+                                            <constraint firstAttribute="trailing" secondItem="Hfz-sP-rK9" secondAttribute="trailing" constant="15" id="QpX-Zz-oSY"/>
+                                            <constraint firstItem="YKM-P6-mWT" firstAttribute="leading" secondItem="VPI-hO-2T1" secondAttribute="leading" constant="23" id="aNX-Yj-XW1"/>
+                                            <constraint firstItem="Hfz-sP-rK9" firstAttribute="leading" secondItem="VPI-hO-2T1" secondAttribute="leading" constant="15" id="joC-PM-9NS"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="VPI-hO-2T1" secondAttribute="trailing" constant="25" id="3oF-W7-pU1"/>
+                                    <constraint firstItem="VPI-hO-2T1" firstAttribute="top" secondItem="pcb-7t-OR4" secondAttribute="top" constant="20" id="BSl-yj-5jV"/>
+                                    <constraint firstItem="VPI-hO-2T1" firstAttribute="leading" secondItem="pcb-7t-OR4" secondAttribute="leading" constant="25" id="O6M-Eo-GTj"/>
+                                    <constraint firstAttribute="bottom" secondItem="VPI-hO-2T1" secondAttribute="bottom" constant="40" id="pFJ-r8-mgk"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zNY-wt-4jN"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zNY-wt-4jN" firstAttribute="trailing" secondItem="pcb-7t-OR4" secondAttribute="trailing" constant="50" id="SDS-uU-Bxy"/>
+                            <constraint firstItem="pcb-7t-OR4" firstAttribute="centerY" secondItem="aaJ-1g-LQ3" secondAttribute="centerY" id="k5s-OT-5hz"/>
+                            <constraint firstItem="pcb-7t-OR4" firstAttribute="leading" secondItem="zNY-wt-4jN" secondAttribute="leading" constant="50" id="xtM-dl-Ire"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="paf-fm-nwM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="-584.59821428571422"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -105,6 +178,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="imgLazyOwner" destination="t8M-PC-APy" id="5qy-3F-8eC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
