@@ -6,6 +6,8 @@
 	<array>
 		<string>SDSamliphopangcheBasic.otf</string>
 		<string>SDSamliphopangcheOutline.otf</string>
+		<string>NanumBarunpenB.otf</string>
+		<string>NanumBarunpenR.otf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
