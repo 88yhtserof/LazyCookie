@@ -9,6 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var imgLazyOwner: UIImageView!
+    @IBOutlet weak var lblNumberOfCookies: UILabel!
+    
+    var cookie: Cookie = Cookie()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +20,17 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.topItem?.title = ""
         
         tapImageLazyOwner()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        setData()
+    }
+    
+    func setData() {
+        self.lblNumberOfCookies.text = String(cookie.numberOfCookies)
+        if !cookie.goals.isEmpty {
+            debugPrint("\(cookie.goals[0].goal)")
+        }
     }
     
     func tapImageLazyOwner() {

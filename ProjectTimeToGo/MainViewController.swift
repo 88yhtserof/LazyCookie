@@ -116,8 +116,12 @@ class MainViewController: UIViewController {
         
         if self.count >= Int(self.duration) {
             self.presentResultAlert(message: self.achivementMessage)
-            
             self.timer.invalidate()
+            
+            guard let viewController = self.storyboard?.instantiateViewController(identifier: "ViewController") as? ViewController else {return}
+            if let goal = self.goal {
+                viewController.cookie.goals.append(goal)
+            }
         }
         
         DispatchQueue.main.async {
