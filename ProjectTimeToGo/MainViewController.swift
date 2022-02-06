@@ -23,6 +23,7 @@ class MainViewController: UIViewController {
     var count = 0
     var achivementMessage: String = ""
     var failureMessage: String = ""
+    var cookies: [Cookie] = []
     
 
     override func viewDidLoad() {
@@ -118,10 +119,26 @@ class MainViewController: UIViewController {
             self.presentResultAlert(message: self.achivementMessage)
             self.timer.invalidate()
             
-            guard let viewController = self.storyboard?.instantiateViewController(identifier: "ViewController") as? ViewController else {return}
-            if let goal = self.goal {
-                viewController.cookie.goals.append(goal)
+            let userDefaults = UserDefaults.standard
+            guard let data1 = userDefaults.object(forKey: "cookies") as? [[String: Any]] else {return}
+            cookies = data1.compactMap{
+                guard let goal = $0["goal"] as? String else {return nil}
+                guard let hour = $0["hour"] as? Int else {return nil}
+                guard let minute = $0["minute"] as? Int else {return nil}
+                return Cookie(goal: goal, hour: hour, minute: minute)
             }
+            debugPrint("!\(cookies)")
+            guard let goal = self.goal else {return}
+            let cookie = Cookie(goal: goal.goal, hour: goal.hour, minute: goal.minute)
+            cookies.append(cookie)
+            let data = cookies.map{
+                [
+                    "goal": $0.goal,
+                    "hour": $0.hour,
+                    "minute": $0.minute
+                ]
+            }
+            userDefaults.setValue(data, forKey: "cookies")
         }
         
         DispatchQueue.main.async {

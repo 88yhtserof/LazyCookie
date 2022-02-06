@@ -7,7 +7,8 @@
 
 import Foundation
 
-class Cookie {
-    var numberOfCookies: Int = 0
-    var goals: [Goal] = []
+struct Cookie {
+    var goal: String
+    var hour: Int
+    var minute: Int
 }
