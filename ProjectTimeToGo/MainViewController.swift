@@ -23,6 +23,7 @@ class MainViewController: UIViewController {
     var count = 0
     var achivementMessage: String = ""
     var failureMessage: String = ""
+    var cookies: [Cookie] = []
     
 
     override func viewDidLoad() {
@@ -116,8 +117,9 @@ class MainViewController: UIViewController {
         
         if self.count >= Int(self.duration) {
             self.presentResultAlert(message: self.achivementMessage)
-            
             self.timer.invalidate()
+            
+            saveData()
         }
         
         DispatchQueue.main.async {
@@ -126,6 +128,29 @@ class MainViewController: UIViewController {
             let second: Int = (self.count%60)
             self.lblTimer.text = "\(hour)시간 \(minute)분 \(second)초"
         }
+    }
+    
+    func saveData() {
+        let userDefaults = UserDefaults.standard
+        guard let savedData = userDefaults.object(forKey: "cookies") as? [[String: Any]] else {return}
+        cookies = savedData.compactMap{
+            guard let goal = $0["goal"] as? String else {return nil}
+            guard let hour = $0["hour"] as? Int else {return nil}
+            guard let minute = $0["minute"] as? Int else {return nil}
+            return Cookie(goal: goal, hour: hour, minute: minute)
+        }
+        
+        guard let goal = self.goal else {return}
+        cookies.append(Cookie(goal: goal.goal, hour: goal.hour, minute: goal.minute))
+        
+        let data = cookies.map{
+            [
+                "goal": $0.goal,
+                "hour": $0.hour,
+                "minute": $0.minute
+            ]
+        }
+        userDefaults.setValue(data, forKey: "cookies")
     }
     
     func tapImageCookie() {
