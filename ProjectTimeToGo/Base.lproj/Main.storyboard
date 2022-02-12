@@ -232,6 +232,9 @@
                                         <state key="normal" title="게으른쿠키 인스타그램">
                                             <color key="titleColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapBtnInstagram:" destination="W9k-OQ-ED1" eventType="touchUpInside" id="pi3-Ok-5Xh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CT3-mg-GkS">
                                         <rect key="frame" x="0.0" y="177" width="65" height="44"/>

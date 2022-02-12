@@ -8,22 +8,19 @@
 import UIKit
 
 class MenuViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func tapBtnInstagram(_ sender: UIButton) {
+        let instagram = "https://www.instagram.com/lazy_cookie_lazy"
+        
+        let instagramURL = NSURL(string: instagram)
+        
+        if UIApplication.shared.canOpenURL(instagramURL! as URL) {
+            UIApplication.shared.open(instagramURL! as URL, options: [:], completionHandler: nil)
+        }
     }
-    */
-
 }
