@@ -205,11 +205,28 @@
                                             <color key="titleColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Ueh-Iq-0pU" kind="presentation" id="cZA-mz-c6o"/>
+                                            <segue destination="Ueh-Iq-0pU" kind="show" id="cZA-mz-c6o"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCh-hG-SjV">
+                                        <rect key="frame" x="0.0" y="59" width="125" height="44"/>
+                                        <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="25"/>
+                                        <state key="normal" title="가게 연락하기">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0HV-9Y-Sek">
+                                        <rect key="frame" x="0.0" y="118" width="207" height="44"/>
+                                        <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="25"/>
+                                        <state key="normal" title="게으른 쿠키 인스타그램">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapBtnInstagram:" destination="W9k-OQ-ED1" eventType="touchUpInside" id="pi3-Ok-5Xh"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bOO-h4-P2H">
-                                        <rect key="frame" x="0.0" y="59" width="334" height="44"/>
+                                        <rect key="frame" x="0.0" y="177" width="334" height="44"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3H-j2-LVg">
                                                 <rect key="frame" x="0.0" y="0.0" width="288" height="44"/>
@@ -226,26 +243,6 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0HV-9Y-Sek">
-                                        <rect key="frame" x="0.0" y="118" width="201" height="44"/>
-                                        <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="25"/>
-                                        <state key="normal" title="게으른쿠키 인스타그램">
-                                            <color key="titleColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="tapBtnInstagram:" destination="W9k-OQ-ED1" eventType="touchUpInside" id="pi3-Ok-5Xh"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CT3-mg-GkS">
-                                        <rect key="frame" x="0.0" y="177" width="65" height="44"/>
-                                        <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="25"/>
-                                        <state key="normal" title="만든 이">
-                                            <color key="titleColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="av5-RV-lJz" kind="presentation" id="O6O-x3-cnm"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="bOO-h4-P2H" secondAttribute="trailing" id="dvc-Vj-3Ot"/>
@@ -282,30 +279,16 @@
             <objects>
                 <viewController id="Ueh-Iq-0pU" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eko-Q2-Lef">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="zGS-x2-DZo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="0B9-iR-k4e"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zao-3e-o3b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2542" y="70"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Msh-3W-Ypm">
-            <objects>
-                <viewController id="av5-RV-lJz" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="V43-B6-RST">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="EpK-gB-6ZC"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="n3J-Zi-AIb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3267" y="62"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Hom-Dd-OHk">
