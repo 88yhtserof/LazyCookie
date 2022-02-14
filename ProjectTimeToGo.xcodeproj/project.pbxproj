@@ -19,6 +19,7 @@
 		9A6B37E2276C3ADF000188F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6B37E0276C3ADF000188F5 /* Main.storyboard */; };
 		9A6B37E4276C3AE0000188F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A6B37E3276C3AE0000188F5 /* Assets.xcassets */; };
 		9A6B37E7276C3AE0000188F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6B37E5276C3AE0000188F5 /* LaunchScreen.storyboard */; };
+		9ACE9CC227BA231C00737A03 /* Lazy.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE9CC127BA231C00737A03 /* Lazy.png */; };
 		9AD0C0BE27A66266001F6B5C /* lazy_cookie_shop_owner.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AD0C0BD27A66266001F6B5C /* lazy_cookie_shop_owner.png */; };
 		9AD0C0C027A66892001F6B5C /* SDSamliphopangcheBasic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9AD0C0BF27A66892001F6B5C /* SDSamliphopangcheBasic.otf */; };
 		9AD0C0C227A6BBBE001F6B5C /* LazyOwnerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD0C0C127A6BBBE001F6B5C /* LazyOwnerDetailsViewController.swift */; };
@@ -48,6 +49,7 @@
 		9A6B37E3276C3AE0000188F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A6B37E6276C3AE0000188F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A6B37E8276C3AE0000188F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9ACE9CC127BA231C00737A03 /* Lazy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Lazy.png; path = ../../../../Lazy.png; sourceTree = "<group>"; };
 		9AD0C0BD27A66266001F6B5C /* lazy_cookie_shop_owner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lazy_cookie_shop_owner.png; sourceTree = "<group>"; };
 		9AD0C0BF27A66892001F6B5C /* SDSamliphopangcheBasic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SDSamliphopangcheBasic.otf; sourceTree = "<group>"; };
 		9AD0C0C127A6BBBE001F6B5C /* LazyOwnerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyOwnerDetailsViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		9ADBAD2127786E7500576EC8 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				9ACE9CC127BA231C00737A03 /* Lazy.png */,
 				9A39BB8627B78D5800DF181B /* LazyCookie.png */,
 				9AD0C0BD27A66266001F6B5C /* lazy_cookie_shop_owner.png */,
 				9A11C22A277A06EB00D141D1 /* main_cookie_line.png */,
@@ -194,6 +197,7 @@
 				9A6B37E7276C3AE0000188F5 /* LaunchScreen.storyboard in Resources */,
 				9A00FF232778B7DA0004B1E6 /* mainpage_background.png in Resources */,
 				9A39BB8727B78D5800DF181B /* LazyCookie.png in Resources */,
+				9ACE9CC227BA231C00737A03 /* Lazy.png in Resources */,
 				9A6B37E4276C3AE0000188F5 /* Assets.xcassets in Resources */,
 				9AE718FD2774083F00D04C17 /* NanumBarunpenB.otf in Resources */,
 				9AE718FE2774084100D04C17 /* NanumBarunpenR.otf in Resources */,

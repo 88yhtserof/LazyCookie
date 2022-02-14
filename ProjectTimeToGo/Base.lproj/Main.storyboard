@@ -284,14 +284,142 @@
                     <view key="view" contentMode="scaleToFill" id="eko-Q2-Lef">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="DnX-Ao-JfA">
+                                <rect key="frame" x="40" y="108" width="334" height="708"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="Lazy.png" translatesAutoresizingMaskIntoConstraints="NO" id="Msr-8e-vGz">
+                                        <rect key="frame" x="10" y="0.0" width="314" height="314"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Msr-8e-vGz" secondAttribute="height" multiplier="1:1" priority="500" id="ioi-sa-PYO"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wzQ-wM-CN5">
+                                        <rect key="frame" x="3" y="344" width="328" height="183"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="모든 반죽의 꿈은 오븐에 들어가는 것!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9L-XF-uZw">
+                                                <rect key="frame" x="31.5" y="0.0" width="265" height="25.5"/>
+                                                <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="20"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="다른 친구들은 모두 멋진 쿠키가 되었지만 Lazy는 귀찮아 가게를 창업합니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gf7-ND-u1r">
+                                                <rect key="frame" x="1" y="35.5" width="326.5" height="51"/>
+                                                <fontDescription key="fontDescription" name="NanumBarunpenOTF" family="NanumBarunpenOTF" pointSize="20"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="여전히 게으른 Lazy는 쿠키를 굽지않아 언제나 가게는 텅텅 " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oGW-XC-itn">
+                                                <rect key="frame" x="0.0" y="96.5" width="328" height="51"/>
+                                                <fontDescription key="fontDescription" name="NanumBarunpenOTF" family="NanumBarunpenOTF" pointSize="20"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="쿠키는 누가 굽나요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZz-VE-BCT">
+                                                <rect key="frame" x="92" y="157.5" width="144" height="25.5"/>
+                                                <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="20"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="hAc-Wb-sOh">
+                                        <rect key="frame" x="77.5" y="622" width="179" height="86"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUG-zS-9Wd">
+                                                <rect key="frame" x="0.0" y="0.0" width="179" height="39.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="개발자 Lazy 알아보기">
+                                                    <fontDescription key="titleFontDescription" name="NanumBarunpenOTF" family="NanumBarunpenOTF" pointSize="20"/>
+                                                    <color key="baseForegroundColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="baseBackgroundColor" red="0.99607843139999996" green="0.83137254900000002" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GA-FP-YzB">
+                                                <rect key="frame" x="29" y="46.5" width="121.5" height="39.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="오픈 라이선스">
+                                                    <fontDescription key="titleFontDescription" name="NanumBarunpenOTF" family="NanumBarunpenOTF" pointSize="20"/>
+                                                    <color key="baseForegroundColor" red="0.99607843139999996" green="0.83137254900000002" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="iXV-da-rUM" kind="presentation" id="oMy-UF-BaF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="hAc-Wb-sOh" secondAttribute="height" multiplier="179:86" id="G4D-YH-cRe"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Msr-8e-vGz" secondAttribute="trailing" constant="10" id="Syw-sl-o7p"/>
+                                    <constraint firstItem="Msr-8e-vGz" firstAttribute="leading" secondItem="DnX-Ao-JfA" secondAttribute="leading" constant="10" id="yJj-jN-ZQn"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="zGS-x2-DZo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DnX-Ao-JfA" firstAttribute="leading" secondItem="zGS-x2-DZo" secondAttribute="leading" constant="40" id="3IJ-Pu-52k"/>
+                            <constraint firstAttribute="bottom" secondItem="DnX-Ao-JfA" secondAttribute="bottom" priority="750" constant="80" id="8yJ-Qe-rMu"/>
+                            <constraint firstAttribute="trailing" secondItem="DnX-Ao-JfA" secondAttribute="trailing" constant="40" id="LPv-RW-R7l"/>
+                            <constraint firstItem="DnX-Ao-JfA" firstAttribute="top" secondItem="zGS-x2-DZo" secondAttribute="top" constant="20" id="UKq-Yk-prq"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0B9-iR-k4e"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zao-3e-o3b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3450.7246376811595" y="69.642857142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="spo-s9-CHL">
+            <objects>
+                <viewController id="iXV-da-rUM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Iw-se-F3v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오픈 라이선스" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVa-LF-k7s">
+                                <rect key="frame" x="20" y="80" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NDu-wh-4CY">
+                                <rect key="frame" x="20" y="130.5" width="374" height="101"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LazyCookie는 (주)SPC삼립에서 제공한 Sandoll 삽립호빵체가 사용되어 있습니다." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8X-Hq-tOk">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                        <fontDescription key="fontDescription" name="SDSamliphopangcheBasic" family="Sandoll Samliphopangche" pointSize="20"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LazyCookie는 네이버에서 제공한 나눔글꼴이 적용되어 있습니다." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdg-PM-wPv">
+                                        <rect key="frame" x="0.0" y="50" width="374" height="51"/>
+                                        <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="20"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="G6J-nv-gHO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eVa-LF-k7s" firstAttribute="trailing" secondItem="NDu-wh-4CY" secondAttribute="trailing" id="2VJ-fy-jDT"/>
+                            <constraint firstItem="eVa-LF-k7s" firstAttribute="leading" secondItem="NDu-wh-4CY" secondAttribute="leading" id="6kw-FM-0HA"/>
+                            <constraint firstItem="eVa-LF-k7s" firstAttribute="top" secondItem="G6J-nv-gHO" secondAttribute="top" constant="80" id="Ien-mj-jf8"/>
+                            <constraint firstItem="NDu-wh-4CY" firstAttribute="top" secondItem="eVa-LF-k7s" secondAttribute="bottom" constant="30" id="Npy-8F-qAw"/>
+                            <constraint firstItem="NDu-wh-4CY" firstAttribute="leading" secondItem="9Iw-se-F3v" secondAttribute="leading" constant="20" id="bIX-5a-DZH"/>
+                            <constraint firstAttribute="trailing" secondItem="NDu-wh-4CY" secondAttribute="trailing" constant="20" id="bnu-6y-Pqx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9LE-0j-iF0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4188.4057971014499" y="69.642857142857139"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="XWe-qp-GS8">
@@ -766,6 +894,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Lazy.png" width="1117.0909423828125" height="1117.0909423828125"/>
         <image name="LazyCookie.png" width="1117.0909423828125" height="1117.0909423828125"/>
         <image name="cookieIcon" width="20" height="20"/>
         <image name="gearshape" catalog="system" width="128" height="121"/>
