@@ -277,10 +277,10 @@
             </objects>
             <point key="canvasLocation" x="2660.8695652173915" y="69.642857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!-- -->
         <scene sceneID="wHy-SL-6JU">
             <objects>
-                <viewController id="Ueh-Iq-0pU" sceneMemberID="viewController">
+                <viewController id="Ueh-Iq-0pU" customClass="LazyCookieStoryViewController" customModule="ProjectTimeToGo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eko-Q2-Lef">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -334,6 +334,9 @@
                                                     <color key="baseForegroundColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="baseBackgroundColor" red="0.99607843139999996" green="0.83137254900000002" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="QGT-t1-hn7" kind="show" id="qMK-ba-uZB"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GA-FP-YzB">
                                                 <rect key="frame" x="29" y="46.5" width="121.5" height="39.5"/>
@@ -367,7 +370,7 @@
                             <constraint firstItem="DnX-Ao-JfA" firstAttribute="top" secondItem="zGS-x2-DZo" secondAttribute="top" constant="20" id="UKq-Yk-prq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="0B9-iR-k4e"/>
+                    <navigationItem key="navigationItem" title=" " id="0B9-iR-k4e"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zao-3e-o3b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -420,6 +423,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9LE-0j-iF0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4188.4057971014499" y="69.642857142857139"/>
+        </scene>
+        <!--Load Github View Controller-->
+        <scene sceneID="g0s-wp-ipf">
+            <objects>
+                <viewController storyboardIdentifier="LoadGithubViewController" id="QGT-t1-hn7" customClass="LoadGithubViewController" customModule="ProjectTimeToGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9MA-Jh-6zK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="umF-UJ-gkA">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="PeK-Lz-LFl">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" red="0.99607843139999996" green="0.83137254900000002" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Cjy-Qy-LfK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cjy-Qy-LfK" firstAttribute="bottom" secondItem="umF-UJ-gkA" secondAttribute="bottom" id="2mO-AX-6KJ"/>
+                            <constraint firstItem="Cjy-Qy-LfK" firstAttribute="trailing" secondItem="umF-UJ-gkA" secondAttribute="trailing" id="9pj-Pk-9p3"/>
+                            <constraint firstItem="PeK-Lz-LFl" firstAttribute="centerX" secondItem="9MA-Jh-6zK" secondAttribute="centerX" id="F57-c9-yEW"/>
+                            <constraint firstItem="umF-UJ-gkA" firstAttribute="top" secondItem="Cjy-Qy-LfK" secondAttribute="top" id="LES-9l-ZAz"/>
+                            <constraint firstItem="umF-UJ-gkA" firstAttribute="leading" secondItem="Cjy-Qy-LfK" secondAttribute="leading" id="MdE-WK-awW"/>
+                            <constraint firstItem="PeK-Lz-LFl" firstAttribute="centerY" secondItem="9MA-Jh-6zK" secondAttribute="centerY" id="jDs-2o-nKg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Eih-0K-sT5"/>
+                    <connections>
+                        <outlet property="indicator" destination="PeK-Lz-LFl" id="GdX-zs-zKE"/>
+                        <outlet property="webView" destination="umF-UJ-gkA" id="Z4f-zA-Quw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d6w-OE-y1z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4964" y="70"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="XWe-qp-GS8">
