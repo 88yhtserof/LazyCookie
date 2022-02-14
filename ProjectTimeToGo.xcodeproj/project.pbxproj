@@ -7,15 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A00FF232778B7DA0004B1E6 /* mainpage_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A00FF222778B7DA0004B1E6 /* mainpage_background.png */; };
+		9A11C22B277A06EB00D141D1 /* main_cookie_line.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A11C22A277A06EB00D141D1 /* main_cookie_line.png */; };
+		9A23460027BA4C9600FC2FAA /* Lazy.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A2345FF27BA4C9600FC2FAA /* Lazy.png */; };
+		9A23460227BA4F1000FC2FAA /* LazyCookieStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A23460127BA4F1000FC2FAA /* LazyCookieStoryViewController.swift */; };
+		9A23460427BA50EE00FC2FAA /* LoadGithubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A23460327BA50EE00FC2FAA /* LoadGithubViewController.swift */; };
+		9A2F96C2276F503E00BEE55B /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F96C1276F503E00BEE55B /* CustomView.swift */; };
+		9A2F96C4276F590D00BEE55B /* TimePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F96C3276F590D00BEE55B /* TimePickerViewController.swift */; };
+		9A39BB8727B78D5800DF181B /* LazyCookie.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A39BB8627B78D5800DF181B /* LazyCookie.png */; };
+		9A39BB8927B7AF6800DF181B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A39BB8827B7AF6800DF181B /* MenuViewController.swift */; };
 		9A6B37DB276C3ADF000188F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6B37DA276C3ADF000188F5 /* AppDelegate.swift */; };
 		9A6B37DD276C3ADF000188F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6B37DC276C3ADF000188F5 /* SceneDelegate.swift */; };
 		9A6B37DF276C3ADF000188F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6B37DE276C3ADF000188F5 /* ViewController.swift */; };
 		9A6B37E2276C3ADF000188F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6B37E0276C3ADF000188F5 /* Main.storyboard */; };
 		9A6B37E4276C3AE0000188F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A6B37E3276C3AE0000188F5 /* Assets.xcassets */; };
 		9A6B37E7276C3AE0000188F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6B37E5276C3AE0000188F5 /* LaunchScreen.storyboard */; };
+		9AD0C0BE27A66266001F6B5C /* lazy_cookie_shop_owner.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AD0C0BD27A66266001F6B5C /* lazy_cookie_shop_owner.png */; };
+		9AD0C0C027A66892001F6B5C /* SDSamliphopangcheBasic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9AD0C0BF27A66892001F6B5C /* SDSamliphopangcheBasic.otf */; };
+		9AD0C0C227A6BBBE001F6B5C /* LazyOwnerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD0C0C127A6BBBE001F6B5C /* LazyOwnerDetailsViewController.swift */; };
+		9AD27C4E2771A767007B936B /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD27C4D2771A767007B936B /* Goal.swift */; };
+		9AD27C502771B2F6007B936B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD27C4F2771B2F6007B936B /* MainViewController.swift */; };
+		9AD6194B27A6D068003D544F /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD6194A27A6D068003D544F /* Cookie.swift */; };
+		9AE5FD88279432770037FA63 /* CookieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE5FD87279432770037FA63 /* CookieDetailsViewController.swift */; };
+		9AE718FD2774083F00D04C17 /* NanumBarunpenB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9A2F96B7276F097100BEE55B /* NanumBarunpenB.otf */; };
+		9AE718FE2774084100D04C17 /* NanumBarunpenR.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9A2F96B8276F097100BEE55B /* NanumBarunpenR.otf */; };
+		9AEAC207276E1957007F9C82 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEAC206276E1957007F9C82 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A00FF222778B7DA0004B1E6 /* mainpage_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainpage_background.png; sourceTree = "<group>"; };
+		9A11C22A277A06EB00D141D1 /* main_cookie_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_cookie_line.png; sourceTree = "<group>"; };
+		9A2345FF27BA4C9600FC2FAA /* Lazy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lazy.png; sourceTree = "<group>"; };
+		9A23460127BA4F1000FC2FAA /* LazyCookieStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyCookieStoryViewController.swift; sourceTree = "<group>"; };
+		9A23460327BA50EE00FC2FAA /* LoadGithubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadGithubViewController.swift; sourceTree = "<group>"; };
+		9A2F96B7276F097100BEE55B /* NanumBarunpenB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunpenB.otf; sourceTree = "<group>"; };
+		9A2F96B8276F097100BEE55B /* NanumBarunpenR.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunpenR.otf; sourceTree = "<group>"; };
+		9A2F96C1276F503E00BEE55B /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		9A2F96C3276F590D00BEE55B /* TimePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerViewController.swift; sourceTree = "<group>"; };
+		9A39BB8627B78D5800DF181B /* LazyCookie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LazyCookie.png; sourceTree = "<group>"; };
+		9A39BB8827B7AF6800DF181B /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		9A6B37D7276C3ADF000188F5 /* ProjectTimeToGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectTimeToGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6B37DA276C3ADF000188F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A6B37DC276C3ADF000188F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +54,14 @@
 		9A6B37E3276C3AE0000188F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A6B37E6276C3AE0000188F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A6B37E8276C3AE0000188F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AD0C0BD27A66266001F6B5C /* lazy_cookie_shop_owner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lazy_cookie_shop_owner.png; sourceTree = "<group>"; };
+		9AD0C0BF27A66892001F6B5C /* SDSamliphopangcheBasic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SDSamliphopangcheBasic.otf; sourceTree = "<group>"; };
+		9AD0C0C127A6BBBE001F6B5C /* LazyOwnerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyOwnerDetailsViewController.swift; sourceTree = "<group>"; };
+		9AD27C4D2771A767007B936B /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		9AD27C4F2771B2F6007B936B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9AD6194A27A6D068003D544F /* Cookie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cookie.swift; sourceTree = "<group>"; };
+		9AE5FD87279432770037FA63 /* CookieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieDetailsViewController.swift; sourceTree = "<group>"; };
+		9AEAC206276E1957007F9C82 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +94,8 @@
 		9A6B37D9276C3ADF000188F5 /* ProjectTimeToGo */ = {
 			isa = PBXGroup;
 			children = (
+				9ADBAD2127786E7500576EC8 /* image */,
+				9A6B37F6276C4D67000188F5 /* Font */,
 				9A6B37DA276C3ADF000188F5 /* AppDelegate.swift */,
 				9A6B37DC276C3ADF000188F5 /* SceneDelegate.swift */,
 				9A6B37DE276C3ADF000188F5 /* ViewController.swift */,
@@ -63,8 +103,41 @@
 				9A6B37E3276C3AE0000188F5 /* Assets.xcassets */,
 				9A6B37E5276C3AE0000188F5 /* LaunchScreen.storyboard */,
 				9A6B37E8276C3AE0000188F5 /* Info.plist */,
+				9AEAC206276E1957007F9C82 /* SettingViewController.swift */,
+				9A2F96C1276F503E00BEE55B /* CustomView.swift */,
+				9A2F96C3276F590D00BEE55B /* TimePickerViewController.swift */,
+				9AD27C4D2771A767007B936B /* Goal.swift */,
+				9AD27C4F2771B2F6007B936B /* MainViewController.swift */,
+				9AE5FD87279432770037FA63 /* CookieDetailsViewController.swift */,
+				9AD0C0C127A6BBBE001F6B5C /* LazyOwnerDetailsViewController.swift */,
+				9AD6194A27A6D068003D544F /* Cookie.swift */,
+				9A39BB8827B7AF6800DF181B /* MenuViewController.swift */,
+				9A23460127BA4F1000FC2FAA /* LazyCookieStoryViewController.swift */,
+				9A23460327BA50EE00FC2FAA /* LoadGithubViewController.swift */,
 			);
 			path = ProjectTimeToGo;
+			sourceTree = "<group>";
+		};
+		9A6B37F6276C4D67000188F5 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				9AD0C0BF27A66892001F6B5C /* SDSamliphopangcheBasic.otf */,
+				9A2F96B7276F097100BEE55B /* NanumBarunpenB.otf */,
+				9A2F96B8276F097100BEE55B /* NanumBarunpenR.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		9ADBAD2127786E7500576EC8 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				9A2345FF27BA4C9600FC2FAA /* Lazy.png */,
+				9A39BB8627B78D5800DF181B /* LazyCookie.png */,
+				9AD0C0BD27A66266001F6B5C /* lazy_cookie_shop_owner.png */,
+				9A11C22A277A06EB00D141D1 /* main_cookie_line.png */,
+				9A00FF222778B7DA0004B1E6 /* mainpage_background.png */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,8 +197,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AD0C0C027A66892001F6B5C /* SDSamliphopangcheBasic.otf in Resources */,
+				9A11C22B277A06EB00D141D1 /* main_cookie_line.png in Resources */,
+				9AD0C0BE27A66266001F6B5C /* lazy_cookie_shop_owner.png in Resources */,
 				9A6B37E7276C3AE0000188F5 /* LaunchScreen.storyboard in Resources */,
+				9A00FF232778B7DA0004B1E6 /* mainpage_background.png in Resources */,
+				9A39BB8727B78D5800DF181B /* LazyCookie.png in Resources */,
+				9A23460027BA4C9600FC2FAA /* Lazy.png in Resources */,
 				9A6B37E4276C3AE0000188F5 /* Assets.xcassets in Resources */,
+				9AE718FD2774083F00D04C17 /* NanumBarunpenB.otf in Resources */,
+				9AE718FE2774084100D04C17 /* NanumBarunpenR.otf in Resources */,
 				9A6B37E2276C3ADF000188F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,9 +218,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A2F96C2276F503E00BEE55B /* CustomView.swift in Sources */,
+				9AE5FD88279432770037FA63 /* CookieDetailsViewController.swift in Sources */,
+				9A2F96C4276F590D00BEE55B /* TimePickerViewController.swift in Sources */,
+				9AD0C0C227A6BBBE001F6B5C /* LazyOwnerDetailsViewController.swift in Sources */,
 				9A6B37DF276C3ADF000188F5 /* ViewController.swift in Sources */,
+				9A23460427BA50EE00FC2FAA /* LoadGithubViewController.swift in Sources */,
 				9A6B37DB276C3ADF000188F5 /* AppDelegate.swift in Sources */,
+				9AD6194B27A6D068003D544F /* Cookie.swift in Sources */,
+				9A39BB8927B7AF6800DF181B /* MenuViewController.swift in Sources */,
 				9A6B37DD276C3ADF000188F5 /* SceneDelegate.swift in Sources */,
+				9A23460227BA4F1000FC2FAA /* LazyCookieStoryViewController.swift in Sources */,
+				9AEAC207276E1957007F9C82 /* SettingViewController.swift in Sources */,
+				9AD27C4E2771A767007B936B /* Goal.swift in Sources */,
+				9AD27C502771B2F6007B936B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,12 +381,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZQV4ZDQNW5;
 				INFOPLIST_FILE = ProjectTimeToGo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tistory.88yhtserof.ProjectTimeToGo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tistory.88yhtserof.LazyCookie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -309,12 +401,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZQV4ZDQNW5;
 				INFOPLIST_FILE = ProjectTimeToGo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tistory.88yhtserof.ProjectTimeToGo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tistory.88yhtserof.LazyCookie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

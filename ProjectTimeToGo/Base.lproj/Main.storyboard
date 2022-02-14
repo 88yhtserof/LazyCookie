@@ -1,24 +1,953 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YYa-8U-Ssc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumBarunpenB.otf">
+            <string>NanumBarunpenOTF-Bold</string>
+        </array>
+        <array key="NanumBarunpenR.otf">
+            <string>NanumBarunpenOTF</string>
+        </array>
+        <array key="SDSamliphopangcheBasic.otf">
+            <string>SDSamliphopangcheBasic</string>
+        </array>
+    </customFonts>
     <scenes>
+        <!--Lazy Owner Details View Controller-->
+        <scene sceneID="P76-HO-snQ">
+            <objects>
+                <viewController storyboardIdentifier="LazyOwnerDetailsViewController" id="3mh-nn-LRz" customClass="LazyOwnerDetailsViewController" customModule="ProjectTimeToGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aaJ-1g-LQ3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pcb-7t-OR4" customClass="CustomView" customModule="ProjectTimeToGo" customModuleProvider="target">
+                                <rect key="frame" x="50" y="243" width="314" height="410.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VPI-hO-2T1">
+                                        <rect key="frame" x="25" y="20" width="264" height="350.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" image="lazy_cookie_shop_owner.png" translatesAutoresizingMaskIntoConstraints="NO" id="YKM-P6-mWT">
+                                                <rect key="frame" x="23" y="0.0" width="218" height="218"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="YKM-P6-mWT" secondAttribute="height" multiplier="1:1" id="gHZ-9z-fnh"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="게으른 쿠키 가게 사장님" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DF0-cS-GLF">
+                                                <rect key="frame" x="24.5" y="233" width="215.5" height="32"/>
+                                                <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="게으른 쿠키 가게 사장님은 오늘도 쿠키를 굽지 않고 가게에 나와 잠만 잡니다. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLt-rG-ico">
+                                                <rect key="frame" x="8" y="280" width="248" height="38.5"/>
+                                                <fontDescription key="fontDescription" name="NanumBarunpenOTF" family="NanumBarunpenOTF" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="쿠키는 누가 굽나요?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hfz-sP-rK9">
+                                                <rect key="frame" x="15" y="333.5" width="234" height="17"/>
+                                                <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="13"/>
+                                                <color key="textColor" red="0.61176472900000001" green="0.40784314269999999" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="highlightedColor" red="0.61176472900000001" green="0.40784314269999999" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="YKM-P6-mWT" secondAttribute="trailing" constant="23" id="2ST-36-hkV"/>
+                                            <constraint firstItem="XLt-rG-ico" firstAttribute="top" secondItem="DF0-cS-GLF" secondAttribute="bottom" constant="15" id="Oes-lb-3Bq"/>
+                                            <constraint firstAttribute="trailing" secondItem="Hfz-sP-rK9" secondAttribute="trailing" constant="15" id="QpX-Zz-oSY"/>
+                                            <constraint firstItem="YKM-P6-mWT" firstAttribute="leading" secondItem="VPI-hO-2T1" secondAttribute="leading" constant="23" id="aNX-Yj-XW1"/>
+                                            <constraint firstItem="Hfz-sP-rK9" firstAttribute="leading" secondItem="VPI-hO-2T1" secondAttribute="leading" constant="15" id="joC-PM-9NS"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="VPI-hO-2T1" secondAttribute="trailing" constant="25" id="3oF-W7-pU1"/>
+                                    <constraint firstItem="VPI-hO-2T1" firstAttribute="top" secondItem="pcb-7t-OR4" secondAttribute="top" constant="20" id="BSl-yj-5jV"/>
+                                    <constraint firstItem="VPI-hO-2T1" firstAttribute="leading" secondItem="pcb-7t-OR4" secondAttribute="leading" constant="25" id="O6M-Eo-GTj"/>
+                                    <constraint firstAttribute="bottom" secondItem="VPI-hO-2T1" secondAttribute="bottom" constant="40" id="pFJ-r8-mgk"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zNY-wt-4jN"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zNY-wt-4jN" firstAttribute="trailing" secondItem="pcb-7t-OR4" secondAttribute="trailing" constant="50" id="SDS-uU-Bxy"/>
+                            <constraint firstItem="pcb-7t-OR4" firstAttribute="centerY" secondItem="aaJ-1g-LQ3" secondAttribute="centerY" id="k5s-OT-5hz"/>
+                            <constraint firstItem="pcb-7t-OR4" firstAttribute="leading" secondItem="zNY-wt-4jN" secondAttribute="leading" constant="50" id="xtM-dl-Ire"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="paf-fm-nwM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="-584.59821428571422"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="ProjectTimeToGo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcd-bw-rxu">
+                                <rect key="frame" x="176" y="213" width="62" height="99"/>
+                                <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="40"/>
+                                <state key="normal" title="시작">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.14117647058823529" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0g7-JR-NEb" kind="show" id="hdf-fd-757"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eM8-AF-gm9">
+                                <rect key="frame" x="60" y="322" width="294" height="324"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="lazy_cookie_shop_owner.png" translatesAutoresizingMaskIntoConstraints="NO" id="t8M-PC-APy">
+                                        <rect key="frame" x="0.0" y="0.0" width="294" height="294"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="t8M-PC-APy" secondAttribute="height" multiplier="1:1" id="Vdq-nk-Ets"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cQu-dK-des" customClass="CustomView" customModule="ProjectTimeToGo" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="294" width="234" height="30"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9SE-IZ-J3h">
+                                                <rect key="frame" x="98" y="2.5" width="38" height="25.5"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cookieIcon" translatesAutoresizingMaskIntoConstraints="NO" id="enC-h7-rEA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="25.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="enC-h7-rEA" secondAttribute="height" multiplier="4:5" id="lhd-iX-Ghq"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Bi-m0-R7B">
+                                                        <rect key="frame" x="28" y="0.0" width="10" height="25.5"/>
+                                                        <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="9SE-IZ-J3h" firstAttribute="centerY" secondItem="cQu-dK-des" secondAttribute="centerY" id="H72-vq-AJY"/>
+                                            <constraint firstAttribute="height" constant="30" id="MSw-Az-6PQ"/>
+                                            <constraint firstItem="9SE-IZ-J3h" firstAttribute="centerX" secondItem="cQu-dK-des" secondAttribute="centerX" id="dfy-Wb-PCb"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isShadow" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cQu-dK-des" firstAttribute="top" secondItem="t8M-PC-APy" secondAttribute="bottom" id="2bH-Nh-7DE"/>
+                                    <constraint firstItem="cQu-dK-des" firstAttribute="leading" secondItem="eM8-AF-gm9" secondAttribute="leading" constant="30" id="FbV-ab-9Ht"/>
+                                    <constraint firstAttribute="trailing" secondItem="cQu-dK-des" secondAttribute="trailing" constant="30" id="XDU-il-7BQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="cQu-dK-des" secondAttribute="bottom" id="nw1-sK-RL0"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.98823529409999999" green="0.98431372549999996" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eM8-AF-gm9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="9P4-4Q-uvW"/>
+                            <constraint firstAttribute="bottom" secondItem="eM8-AF-gm9" secondAttribute="bottom" priority="500" constant="250" id="FQD-KX-78f"/>
+                            <constraint firstItem="vcd-bw-rxu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LXZ-GO-Bex"/>
+                            <constraint firstItem="eM8-AF-gm9" firstAttribute="top" secondItem="vcd-bw-rxu" secondAttribute="bottom" constant="10" id="X1D-rN-ILr"/>
+                            <constraint firstItem="vcd-bw-rxu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" priority="750" constant="125" id="XQK-TH-fL5"/>
+                            <constraint firstAttribute="trailing" secondItem="eM8-AF-gm9" secondAttribute="trailing" constant="60" id="hPt-Vf-Zy6"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="nTA-v9-hD3">
+                        <barButtonItem key="rightBarButtonItem" image="gearshape" catalog="system" id="8at-rh-H7y">
+                            <connections>
+                                <segue destination="W9k-OQ-ED1" kind="show" id="aOp-7J-RQw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imgLazyOwner" destination="t8M-PC-APy" id="5qy-3F-8eC"/>
+                        <outlet property="lblNumberOfCookies" destination="9Bi-m0-R7B" id="tmV-zv-81k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1855.072463768116" y="69.642857142857139"/>
+        </scene>
+        <!--설정-->
+        <scene sceneID="XnW-iR-uSB">
+            <objects>
+                <viewController id="W9k-OQ-ED1" customClass="MenuViewController" customModule="ProjectTimeToGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5cC-Q1-sEO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="RKq-xc-Dyi">
+                                <rect key="frame" x="40" y="128" width="334" height="221"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obr-ee-Bfw">
+                                        <rect key="frame" x="0.0" y="0.0" width="168" height="44"/>
+                                        <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="25"/>
+                                        <state key="normal" title="게으른 쿠키 이야기">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Ueh-Iq-0pU" kind="show" id="cZA-mz-c6o"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCh-hG-SjV">
+                                        <rect key="frame" x="0.0" y="59" width="124" height="44"/>
+                                        <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="25"/>
+                                        <state key="normal" title="가게 문의하기">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapBtnSendEmail:" destination="W9k-OQ-ED1" eventType="touchUpInside" id="XD5-fm-nWm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0HV-9Y-Sek">
+                                        <rect key="frame" x="0.0" y="118" width="207" height="44"/>
+                                        <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="25"/>
+                                        <state key="normal" title="게으른 쿠키 인스타그램">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapBtnInstagram:" destination="W9k-OQ-ED1" eventType="touchUpInside" id="pi3-Ok-5Xh"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bOO-h4-P2H">
+                                        <rect key="frame" x="0.0" y="177" width="334" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3H-j2-LVg">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="44"/>
+                                                <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="25"/>
+                                                <state key="normal" title="앱 버전">
+                                                    <color key="titleColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sr7-sp-8VV">
+                                                <rect key="frame" x="308" y="0.0" width="26" height="44"/>
+                                                <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="25"/>
+                                                <color key="textColor" red="0.31781375769999998" green="0.23899444140000001" blue="0.13806571070000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="bOO-h4-P2H" secondAttribute="trailing" id="dvc-Vj-3Ot"/>
+                                    <constraint firstItem="bOO-h4-P2H" firstAttribute="leading" secondItem="RKq-xc-Dyi" secondAttribute="leading" id="oOe-nQ-gzs"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="500" image="LazyCookie.png" translatesAutoresizingMaskIntoConstraints="NO" id="HfM-vA-Bdp">
+                                <rect key="frame" x="70" y="549" width="274" height="313"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HfM-vA-Bdp" secondAttribute="height" multiplier="1:1" priority="500" id="inb-Xg-vmq"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IdD-TS-ZmQ"/>
+                        <color key="backgroundColor" red="0.98823529409999999" green="0.98431372549999996" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HfM-vA-Bdp" secondAttribute="trailing" constant="70" id="Fp3-By-IO9"/>
+                            <constraint firstItem="RKq-xc-Dyi" firstAttribute="top" secondItem="IdD-TS-ZmQ" secondAttribute="top" constant="40" id="G8p-PR-RyN"/>
+                            <constraint firstItem="HfM-vA-Bdp" firstAttribute="top" secondItem="RKq-xc-Dyi" secondAttribute="bottom" priority="750" constant="200" id="HtS-0m-XI3"/>
+                            <constraint firstItem="HfM-vA-Bdp" firstAttribute="leading" secondItem="5cC-Q1-sEO" secondAttribute="leading" constant="70" id="OQm-Bn-bTc"/>
+                            <constraint firstItem="IdD-TS-ZmQ" firstAttribute="bottom" secondItem="HfM-vA-Bdp" secondAttribute="bottom" id="UgZ-QP-1Tj"/>
+                            <constraint firstItem="RKq-xc-Dyi" firstAttribute="leading" secondItem="IdD-TS-ZmQ" secondAttribute="leading" constant="40" id="XZH-rt-Ou4"/>
+                            <constraint firstItem="IdD-TS-ZmQ" firstAttribute="trailing" secondItem="RKq-xc-Dyi" secondAttribute="trailing" constant="40" id="hUp-zI-YbK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="설정" id="Qmw-PH-IlZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rp1-c9-JjW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2660.8695652173915" y="69.642857142857139"/>
+        </scene>
+        <!-- -->
+        <scene sceneID="wHy-SL-6JU">
+            <objects>
+                <viewController id="Ueh-Iq-0pU" customClass="LazyCookieStoryViewController" customModule="ProjectTimeToGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eko-Q2-Lef">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="DnX-Ao-JfA">
+                                <rect key="frame" x="40" y="108" width="334" height="708"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="Lazy.png" translatesAutoresizingMaskIntoConstraints="NO" id="Msr-8e-vGz">
+                                        <rect key="frame" x="10" y="0.0" width="314" height="314"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Msr-8e-vGz" secondAttribute="height" multiplier="1:1" priority="500" id="ioi-sa-PYO"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wzQ-wM-CN5">
+                                        <rect key="frame" x="3" y="344" width="328" height="183"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="모든 반죽의 꿈은 오븐에 들어가는 것!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9L-XF-uZw">
+                                                <rect key="frame" x="31.5" y="0.0" width="265" height="25.5"/>
+                                                <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="20"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="다른 친구들은 모두 멋진 쿠키가 되었지만 Lazy는 귀찮아 가게를 창업합니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gf7-ND-u1r">
+                                                <rect key="frame" x="1" y="35.5" width="326.5" height="51"/>
+                                                <fontDescription key="fontDescription" name="NanumBarunpenOTF" family="NanumBarunpenOTF" pointSize="20"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="여전히 게으른 Lazy는 쿠키를 굽지않아 언제나 가게는 텅텅 " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oGW-XC-itn">
+                                                <rect key="frame" x="0.0" y="96.5" width="328" height="51"/>
+                                                <fontDescription key="fontDescription" name="NanumBarunpenOTF" family="NanumBarunpenOTF" pointSize="20"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="쿠키는 누가 굽나요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZz-VE-BCT">
+                                                <rect key="frame" x="92" y="157.5" width="144" height="25.5"/>
+                                                <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="20"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="hAc-Wb-sOh">
+                                        <rect key="frame" x="77.5" y="622" width="179" height="86"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUG-zS-9Wd">
+                                                <rect key="frame" x="0.0" y="0.0" width="179" height="39.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="개발자 Lazy 알아보기">
+                                                    <fontDescription key="titleFontDescription" name="NanumBarunpenOTF" family="NanumBarunpenOTF" pointSize="20"/>
+                                                    <color key="baseForegroundColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="baseBackgroundColor" red="0.99607843139999996" green="0.83137254900000002" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="QGT-t1-hn7" kind="show" id="qMK-ba-uZB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GA-FP-YzB">
+                                                <rect key="frame" x="29" y="46.5" width="121.5" height="39.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="오픈 라이선스">
+                                                    <fontDescription key="titleFontDescription" name="NanumBarunpenOTF" family="NanumBarunpenOTF" pointSize="20"/>
+                                                    <color key="baseForegroundColor" red="0.99607843139999996" green="0.83137254900000002" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="iXV-da-rUM" kind="presentation" id="oMy-UF-BaF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="hAc-Wb-sOh" secondAttribute="height" multiplier="179:86" id="G4D-YH-cRe"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Msr-8e-vGz" secondAttribute="trailing" constant="10" id="Syw-sl-o7p"/>
+                                    <constraint firstItem="Msr-8e-vGz" firstAttribute="leading" secondItem="DnX-Ao-JfA" secondAttribute="leading" constant="10" id="yJj-jN-ZQn"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zGS-x2-DZo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DnX-Ao-JfA" firstAttribute="leading" secondItem="zGS-x2-DZo" secondAttribute="leading" constant="40" id="3IJ-Pu-52k"/>
+                            <constraint firstAttribute="bottom" secondItem="DnX-Ao-JfA" secondAttribute="bottom" priority="750" constant="80" id="8yJ-Qe-rMu"/>
+                            <constraint firstAttribute="trailing" secondItem="DnX-Ao-JfA" secondAttribute="trailing" constant="40" id="LPv-RW-R7l"/>
+                            <constraint firstItem="DnX-Ao-JfA" firstAttribute="top" secondItem="zGS-x2-DZo" secondAttribute="top" constant="20" id="UKq-Yk-prq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title=" " id="0B9-iR-k4e"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zao-3e-o3b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3450.7246376811595" y="69.642857142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="spo-s9-CHL">
+            <objects>
+                <viewController id="iXV-da-rUM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Iw-se-F3v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오픈 라이선스" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVa-LF-k7s">
+                                <rect key="frame" x="20" y="80" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NDu-wh-4CY">
+                                <rect key="frame" x="20" y="130.5" width="374" height="101"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LazyCookie는 (주)SPC삼립에서 제공한 Sandoll 삽립호빵체가 사용되어 있습니다." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8X-Hq-tOk">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                        <fontDescription key="fontDescription" name="SDSamliphopangcheBasic" family="Sandoll Samliphopangche" pointSize="20"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LazyCookie는 네이버에서 제공한 나눔글꼴이 적용되어 있습니다." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdg-PM-wPv">
+                                        <rect key="frame" x="0.0" y="50" width="374" height="51"/>
+                                        <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="20"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="G6J-nv-gHO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eVa-LF-k7s" firstAttribute="trailing" secondItem="NDu-wh-4CY" secondAttribute="trailing" id="2VJ-fy-jDT"/>
+                            <constraint firstItem="eVa-LF-k7s" firstAttribute="leading" secondItem="NDu-wh-4CY" secondAttribute="leading" id="6kw-FM-0HA"/>
+                            <constraint firstItem="eVa-LF-k7s" firstAttribute="top" secondItem="G6J-nv-gHO" secondAttribute="top" constant="80" id="Ien-mj-jf8"/>
+                            <constraint firstItem="NDu-wh-4CY" firstAttribute="top" secondItem="eVa-LF-k7s" secondAttribute="bottom" constant="30" id="Npy-8F-qAw"/>
+                            <constraint firstItem="NDu-wh-4CY" firstAttribute="leading" secondItem="9Iw-se-F3v" secondAttribute="leading" constant="20" id="bIX-5a-DZH"/>
+                            <constraint firstAttribute="trailing" secondItem="NDu-wh-4CY" secondAttribute="trailing" constant="20" id="bnu-6y-Pqx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9LE-0j-iF0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4188.4057971014499" y="69.642857142857139"/>
+        </scene>
+        <!--Load Github View Controller-->
+        <scene sceneID="g0s-wp-ipf">
+            <objects>
+                <viewController storyboardIdentifier="LoadGithubViewController" id="QGT-t1-hn7" customClass="LoadGithubViewController" customModule="ProjectTimeToGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9MA-Jh-6zK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="umF-UJ-gkA">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="PeK-Lz-LFl">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" red="0.99607843139999996" green="0.83137254900000002" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Cjy-Qy-LfK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cjy-Qy-LfK" firstAttribute="bottom" secondItem="umF-UJ-gkA" secondAttribute="bottom" id="2mO-AX-6KJ"/>
+                            <constraint firstItem="Cjy-Qy-LfK" firstAttribute="trailing" secondItem="umF-UJ-gkA" secondAttribute="trailing" id="9pj-Pk-9p3"/>
+                            <constraint firstItem="PeK-Lz-LFl" firstAttribute="centerX" secondItem="9MA-Jh-6zK" secondAttribute="centerX" id="F57-c9-yEW"/>
+                            <constraint firstItem="umF-UJ-gkA" firstAttribute="top" secondItem="Cjy-Qy-LfK" secondAttribute="top" id="LES-9l-ZAz"/>
+                            <constraint firstItem="umF-UJ-gkA" firstAttribute="leading" secondItem="Cjy-Qy-LfK" secondAttribute="leading" id="MdE-WK-awW"/>
+                            <constraint firstItem="PeK-Lz-LFl" firstAttribute="centerY" secondItem="9MA-Jh-6zK" secondAttribute="centerY" id="jDs-2o-nKg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Eih-0K-sT5"/>
+                    <connections>
+                        <outlet property="indicator" destination="PeK-Lz-LFl" id="GdX-zs-zKE"/>
+                        <outlet property="webView" destination="umF-UJ-gkA" id="Z4f-zA-Quw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d6w-OE-y1z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4964" y="70"/>
+        </scene>
+        <!--Setting View Controller-->
+        <scene sceneID="XWe-qp-GS8">
+            <objects>
+                <viewController id="0g7-JR-NEb" customClass="SettingViewController" customModule="ProjectTimeToGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q0Z-xI-Cqk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VNc-O7-drV">
+                                <rect key="frame" x="20" y="108" width="374" height="546"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZV4-33-7FU" customClass="CustomView" customModule="ProjectTimeToGo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="200"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="목표" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rw-XH-WKn">
+                                                <rect key="frame" x="25" y="25" width="32.5" height="27"/>
+                                                <fontDescription key="fontDescription" name="NanumBarunpenOTF" family="NanumBarunpenOTF" pointSize="21"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.98431372549999996" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="목표를 적어주세요." textAlignment="center" minimumFontSize="25" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mSr-s0-IZ8">
+                                                <rect key="frame" x="20" y="81.5" width="334" height="37.5"/>
+                                                <color key="tintColor" red="0.98823529409999999" green="0.98431372549999996" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.98431372549999996" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="28"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="mSr-s0-IZ8" firstAttribute="leading" secondItem="ZV4-33-7FU" secondAttribute="leading" constant="20" id="0nT-37-457"/>
+                                            <constraint firstItem="4rw-XH-WKn" firstAttribute="top" secondItem="ZV4-33-7FU" secondAttribute="top" constant="25" id="75u-jM-u9y"/>
+                                            <constraint firstAttribute="width" secondItem="ZV4-33-7FU" secondAttribute="height" multiplier="374:200" id="RAZ-mc-qHe"/>
+                                            <constraint firstAttribute="trailing" secondItem="mSr-s0-IZ8" secondAttribute="trailing" constant="20" id="UNe-He-EtJ"/>
+                                            <constraint firstItem="4rw-XH-WKn" firstAttribute="leading" secondItem="ZV4-33-7FU" secondAttribute="leading" constant="25" id="WLp-vr-ZSi"/>
+                                            <constraint firstItem="mSr-s0-IZ8" firstAttribute="centerY" secondItem="ZV4-33-7FU" secondAttribute="centerY" id="gF2-o1-ovE"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isShadow" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="APp-3x-F7O" customClass="CustomView" customModule="ProjectTimeToGo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="210" width="374" height="56"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="M20-Uu-9RN">
+                                                <rect key="frame" x="25" y="7" width="324" height="42"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="목표 시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFQ-43-zXt">
+                                                        <rect key="frame" x="0.0" y="0.0" width="70.5" height="42"/>
+                                                        <fontDescription key="fontDescription" name="NanumBarunpenOTF" family="NanumBarunpenOTF" pointSize="21"/>
+                                                        <color key="textColor" red="0.98823529409999999" green="0.98431372549999996" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPu-8E-xKx">
+                                                        <rect key="frame" x="170.5" y="0.0" width="153.5" height="42"/>
+                                                        <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="23"/>
+                                                        <state key="normal" title="1시간 30분">
+                                                            <color key="titleColor" red="0.98823529409999999" green="0.98431372549999996" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="CE2-PZ-IlL" kind="presentation" id="KCz-7U-fq2"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="M20-Uu-9RN" firstAttribute="centerY" secondItem="APp-3x-F7O" secondAttribute="centerY" id="0MU-8J-8Ju"/>
+                                            <constraint firstAttribute="trailing" secondItem="M20-Uu-9RN" secondAttribute="trailing" constant="25" id="5O7-TW-Tc4"/>
+                                            <constraint firstItem="M20-Uu-9RN" firstAttribute="leading" secondItem="APp-3x-F7O" secondAttribute="leading" constant="25" id="AGk-yF-e8g"/>
+                                            <constraint firstAttribute="width" secondItem="APp-3x-F7O" secondAttribute="height" multiplier="187:28" id="AzO-i5-u2Z"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isShadow" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lp3-KX-r6W" customClass="CustomView" customModule="ProjectTimeToGo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="276" width="374" height="130"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="cyh-OB-HE7">
+                                                <rect key="frame" x="20" y="20" width="334" height="90"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="성공한다면?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5T-He-l11">
+                                                        <rect key="frame" x="0.0" y="0.0" width="334" height="27"/>
+                                                        <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="21"/>
+                                                        <color key="textColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="오늘도 수고했어!" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Q5J-Om-AlQ">
+                                                        <rect key="frame" x="0.0" y="44" width="334" height="46"/>
+                                                        <color key="tintColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="textColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="NanumBarunpenOTF" family="NanumBarunpenOTF" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.98823529409999999" green="0.98431372549999996" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="cyh-OB-HE7" firstAttribute="leading" secondItem="Lp3-KX-r6W" secondAttribute="leading" constant="20" id="AjV-BT-dFt"/>
+                                            <constraint firstAttribute="trailing" secondItem="cyh-OB-HE7" secondAttribute="trailing" constant="20" id="PhH-jy-pTm"/>
+                                            <constraint firstAttribute="width" secondItem="Lp3-KX-r6W" secondAttribute="height" multiplier="374:130" id="eRD-JP-ZiH"/>
+                                            <constraint firstAttribute="bottom" secondItem="cyh-OB-HE7" secondAttribute="bottom" priority="750" constant="20" id="ega-bg-yYn"/>
+                                            <constraint firstItem="cyh-OB-HE7" firstAttribute="top" secondItem="Lp3-KX-r6W" secondAttribute="top" constant="20" id="oYM-mB-opE"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isShadow" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" horizontalCompressionResistancePriority="500" translatesAutoresizingMaskIntoConstraints="NO" id="zDr-qK-m3I" customClass="CustomView" customModule="ProjectTimeToGo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="416" width="374" height="130"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Wfv-a7-Nf0">
+                                                <rect key="frame" x="20" y="20" width="334" height="90"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="실패한다면?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFb-uf-RuR">
+                                                        <rect key="frame" x="0.0" y="0.0" width="334" height="27"/>
+                                                        <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="21"/>
+                                                        <color key="textColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="다음에 잘 해보자!" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Shx-y5-vHP">
+                                                        <rect key="frame" x="0.0" y="45" width="334" height="45"/>
+                                                        <color key="tintColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="textColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="NanumBarunpenOTF" family="NanumBarunpenOTF" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.98823529409999999" green="0.98431372549999996" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Wfv-a7-Nf0" secondAttribute="trailing" constant="20" id="4oS-JZ-9dP"/>
+                                            <constraint firstAttribute="bottom" secondItem="Wfv-a7-Nf0" secondAttribute="bottom" priority="750" constant="20" id="Zib-PX-XqY"/>
+                                            <constraint firstItem="Wfv-a7-Nf0" firstAttribute="top" secondItem="zDr-qK-m3I" secondAttribute="top" constant="20" id="bWV-f2-7pM"/>
+                                            <constraint firstItem="Wfv-a7-Nf0" firstAttribute="leading" secondItem="zDr-qK-m3I" secondAttribute="leading" constant="20" id="fm6-AT-S0a"/>
+                                            <constraint firstAttribute="width" secondItem="zDr-qK-m3I" secondAttribute="height" multiplier="374:130" id="j7K-VZ-vrA"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isShadow" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="X7s-Bc-Kag"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="X7s-Bc-Kag" firstAttribute="trailing" secondItem="VNc-O7-drV" secondAttribute="trailing" constant="20" id="3Op-HE-JqF"/>
+                            <constraint firstItem="VNc-O7-drV" firstAttribute="top" secondItem="X7s-Bc-Kag" secondAttribute="top" constant="20" id="cM7-bO-nbB"/>
+                            <constraint firstItem="X7s-Bc-Kag" firstAttribute="bottom" secondItem="VNc-O7-drV" secondAttribute="bottom" priority="750" constant="20" id="dwf-qV-tg1"/>
+                            <constraint firstItem="VNc-O7-drV" firstAttribute="leading" secondItem="X7s-Bc-Kag" secondAttribute="leading" constant="20" id="hvC-PA-kOf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JVN-sd-4zz">
+                        <barButtonItem key="rightBarButtonItem" title="완료" id="3UX-rj-D1p">
+                            <connections>
+                                <segue destination="BLf-cN-wxo" kind="show" id="XWX-nj-uUC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnTime" destination="zPu-8E-xKx" id="d1p-2d-HO5"/>
+                        <outlet property="textFieldAchievement" destination="Q5J-Om-AlQ" id="vtg-Bu-f97"/>
+                        <outlet property="textFieldFailure" destination="Shx-y5-vHP" id="3YB-cz-flG"/>
+                        <outlet property="textGoal" destination="mSr-s0-IZ8" id="CrP-cV-4Wx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RZ6-f5-VGU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="812.94642857142856"/>
+        </scene>
+        <!-- -->
+        <scene sceneID="pmB-dY-lpc">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="BLf-cN-wxo" customClass="MainViewController" customModule="ProjectTimeToGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U6W-cW-7Da">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="500" image="mainpage_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="JEu-aq-Qcg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="123"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="500" constant="120" id="FHM-p1-BwM"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_cookie_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="lSQ-U1-73c">
+                                <rect key="frame" x="132" y="373" width="150" height="150"/>
+                                <color key="tintColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lSQ-U1-73c" secondAttribute="height" multiplier="1:1" id="DUP-1C-8jR"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EGy-77-zVX">
+                                <rect key="frame" x="25" y="183" width="364" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="런닝머신 1시간" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="nTV-2b-rH1">
+                                        <rect key="frame" x="75" y="0.0" width="214.5" height="22"/>
+                                        <fontDescription key="fontDescription" name="SDSamliphopangcheBasic" family="Sandoll Samliphopangche" pointSize="40"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6w6-jZ-Chn" customClass="CustomView" customModule="ProjectTimeToGo" customModuleProvider="target">
+                                        <rect key="frame" x="94" y="30" width="176" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2시간 30분" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJ3-ub-Kd2">
+                                                <rect key="frame" x="58" y="15" width="60.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="15"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.98431372549999996" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="UJ3-ub-Kd2" firstAttribute="centerY" secondItem="6w6-jZ-Chn" secondAttribute="centerY" id="qoK-x0-gxt"/>
+                                            <constraint firstItem="UJ3-ub-Kd2" firstAttribute="centerX" secondItem="6w6-jZ-Chn" secondAttribute="centerX" id="rt9-Z5-cBP"/>
+                                            <constraint firstAttribute="width" secondItem="6w6-jZ-Chn" secondAttribute="height" multiplier="95:27" id="tEs-7l-84K"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EGy-77-zVX" secondAttribute="height" multiplier="91:20" id="dbz-UO-2YC"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="VYq-QN-usc">
+                                <rect key="frame" x="80" y="656" width="254" height="136"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0시간 0분 0초" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cua-RB-tOi">
+                                        <rect key="frame" x="76" y="0.0" width="102" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="20"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnE-VP-aB2">
+                                        <rect key="frame" x="0.0" y="42.5" width="254" height="42.5"/>
+                                        <color key="backgroundColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="EnE-VP-aB2" secondAttribute="height" multiplier="281:47" id="jrz-GI-hdi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="25"/>
+                                        <state key="normal" title="시작">
+                                            <color key="titleColor" red="0.98823529409999999" green="0.98431372549999996" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapBtnStart:" destination="BLf-cN-wxo" eventType="touchUpInside" id="KxY-Om-Aep"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cae-OR-3Kt">
+                                        <rect key="frame" x="103.5" y="102" width="47" height="34"/>
+                                        <color key="tintColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="나가기">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapBtnLeave:" destination="BLf-cN-wxo" eventType="touchUpInside" id="ZTb-Fp-e8F"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NRB-08-eGH"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lSQ-U1-73c" firstAttribute="centerY" secondItem="U6W-cW-7Da" secondAttribute="centerY" id="1oJ-SC-BBE"/>
+                            <constraint firstItem="NRB-08-eGH" firstAttribute="trailing" secondItem="EGy-77-zVX" secondAttribute="trailing" constant="25" id="2sX-Mu-PUQ"/>
+                            <constraint firstItem="NRB-08-eGH" firstAttribute="bottom" secondItem="VYq-QN-usc" secondAttribute="bottom" constant="70" id="4aP-dN-peA"/>
+                            <constraint firstItem="lSQ-U1-73c" firstAttribute="leading" secondItem="NRB-08-eGH" secondAttribute="leading" constant="132" id="GWf-Ie-fmw"/>
+                            <constraint firstItem="JEu-aq-Qcg" firstAttribute="trailing" secondItem="NRB-08-eGH" secondAttribute="trailing" id="GhN-I4-c7z"/>
+                            <constraint firstItem="JEu-aq-Qcg" firstAttribute="leading" secondItem="NRB-08-eGH" secondAttribute="leading" id="QoQ-BI-DMZ"/>
+                            <constraint firstItem="NRB-08-eGH" firstAttribute="trailing" secondItem="VYq-QN-usc" secondAttribute="trailing" constant="80" id="Xq3-nS-mcr"/>
+                            <constraint firstItem="lSQ-U1-73c" firstAttribute="top" secondItem="EGy-77-zVX" secondAttribute="bottom" constant="110" id="aeF-JI-H0x"/>
+                            <constraint firstItem="NRB-08-eGH" firstAttribute="trailing" secondItem="lSQ-U1-73c" secondAttribute="trailing" constant="132" id="dcr-j0-vzR"/>
+                            <constraint firstItem="VYq-QN-usc" firstAttribute="leading" secondItem="NRB-08-eGH" secondAttribute="leading" constant="80" id="hIg-PK-qxM"/>
+                            <constraint firstItem="JEu-aq-Qcg" firstAttribute="top" secondItem="U6W-cW-7Da" secondAttribute="top" id="hUq-KS-ebo"/>
+                            <constraint firstItem="EGy-77-zVX" firstAttribute="leading" secondItem="NRB-08-eGH" secondAttribute="leading" constant="25" id="orB-s6-AW8"/>
+                            <constraint firstItem="EGy-77-zVX" firstAttribute="top" secondItem="JEu-aq-Qcg" secondAttribute="bottom" priority="750" constant="60" id="yZw-oF-cJv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title=" " id="VEk-UJ-5Nt"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="btnStart" destination="EnE-VP-aB2" id="biU-Cc-asb"/>
+                        <outlet property="imgCookie" destination="lSQ-U1-73c" id="L2g-Is-474"/>
+                        <outlet property="lblGoal" destination="nTV-2b-rH1" id="qZo-CP-m02"/>
+                        <outlet property="lblGoalTime" destination="UJ3-ub-Kd2" id="Moo-qg-hod"/>
+                        <outlet property="lblTimer" destination="cua-RB-tOi" id="1ay-9K-pyl"/>
+                        <outlet property="viewTop" destination="JEu-aq-Qcg" id="stT-UN-eEC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qml-Cm-Lpw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="1577.6785714285713"/>
+        </scene>
+        <!--Time Picker View Controller-->
+        <scene sceneID="N7Z-s7-Aso">
+            <objects>
+                <viewController id="CE2-PZ-IlL" customClass="TimePickerViewController" customModule="ProjectTimeToGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SAO-id-50h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eb9-T5-4Rw" customClass="CustomView" customModule="ProjectTimeToGo" customModuleProvider="target">
+                                <rect key="frame" x="50" y="287.5" width="314" height="267"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gw-Lx-Vy4">
+                                        <rect key="frame" x="264" y="209" width="30" height="38"/>
+                                        <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="20"/>
+                                        <state key="normal" title="설정">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapBtnSetting:" destination="CE2-PZ-IlL" eventType="touchUpInside" id="nUQ-No-xOF"/>
+                                        </connections>
+                                    </button>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" countDownDuration="5400" minuteInterval="10" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lda-U3-bpX">
+                                        <rect key="frame" x="20" y="10" width="274" height="216"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Lda-U3-bpX" secondAttribute="height" multiplier="137:108" id="jQI-vM-QcY"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="changedTime:" destination="CE2-PZ-IlL" eventType="valueChanged" id="Pml-Qx-vb4"/>
+                                        </connections>
+                                    </datePicker>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eb9-T5-4Rw" secondAttribute="height" multiplier="314:267" id="AnZ-Rx-RXp"/>
+                                    <constraint firstAttribute="trailing" secondItem="9gw-Lx-Vy4" secondAttribute="trailing" constant="20" id="OPD-bB-khW"/>
+                                    <constraint firstItem="Lda-U3-bpX" firstAttribute="top" secondItem="eb9-T5-4Rw" secondAttribute="top" constant="10" id="OxH-cj-1EB"/>
+                                    <constraint firstItem="Lda-U3-bpX" firstAttribute="leading" secondItem="eb9-T5-4Rw" secondAttribute="leading" constant="20" id="Qyb-sY-cKp"/>
+                                    <constraint firstAttribute="bottom" secondItem="9gw-Lx-Vy4" secondAttribute="bottom" constant="20" id="rS2-gt-NDd"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lda-U3-bpX" secondAttribute="trailing" constant="20" id="vJ7-VO-4jr"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AFW-bM-eQk"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eb9-T5-4Rw" firstAttribute="leading" secondItem="AFW-bM-eQk" secondAttribute="leading" constant="50" id="Fke-je-xEr"/>
+                            <constraint firstItem="eb9-T5-4Rw" firstAttribute="centerY" secondItem="SAO-id-50h" secondAttribute="centerY" id="Yja-22-DRx"/>
+                            <constraint firstItem="AFW-bM-eQk" firstAttribute="trailing" secondItem="eb9-T5-4Rw" secondAttribute="trailing" constant="50" id="abs-uQ-QQQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="timePicker" destination="Lda-U3-bpX" id="ZUF-vf-IXD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5nc-LZ-s21" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1663.7681159420292" y="812.94642857142856"/>
+        </scene>
+        <!--Cookie Details View Controller-->
+        <scene sceneID="VHM-nN-wYf">
+            <objects>
+                <viewController storyboardIdentifier="CookieDetailsViewController" id="vQY-rg-hoq" customClass="CookieDetailsViewController" customModule="ProjectTimeToGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="llS-Pz-Zcg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GYf-0K-TQf" customClass="CustomView" customModule="ProjectTimeToGo" customModuleProvider="target">
+                                <rect key="frame" x="50" y="243" width="314" height="410.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="365-gm-dyP">
+                                        <rect key="frame" x="25" y="20" width="264" height="350.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" image="main_cookie_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="o7L-ZY-Fva">
+                                                <rect key="frame" x="23" y="0.0" width="218" height="218"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="o7L-ZY-Fva" secondAttribute="height" multiplier="1:1" id="Kd8-mO-2Xs"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="쿠키 이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdy-bq-iLT">
+                                                <rect key="frame" x="90.5" y="233" width="83" height="32"/>
+                                                <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="쿠키 설명이 들어갈 공간. 쿠키의 역사와 여러 중요하지 않은 설명쿠키 설명이 들어갈 공간. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2h-Y8-7Dl">
+                                                <rect key="frame" x="14" y="280" width="236.5" height="38.5"/>
+                                                <fontDescription key="fontDescription" name="NanumBarunpenOTF" family="NanumBarunpenOTF" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="궁금하지 않을 정보" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tC2-pH-qU1">
+                                                <rect key="frame" x="15" y="333.5" width="234" height="17"/>
+                                                <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="13"/>
+                                                <color key="textColor" red="0.61176472900000001" green="0.40784314269999999" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="highlightedColor" red="0.61176472900000001" green="0.40784314269999999" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="tC2-pH-qU1" secondAttribute="trailing" constant="15" id="3uW-sU-wWy"/>
+                                            <constraint firstItem="c2h-Y8-7Dl" firstAttribute="top" secondItem="pdy-bq-iLT" secondAttribute="bottom" constant="15" id="Bk8-5O-rWV"/>
+                                            <constraint firstItem="o7L-ZY-Fva" firstAttribute="leading" secondItem="365-gm-dyP" secondAttribute="leading" constant="23" id="GSd-TV-zfz"/>
+                                            <constraint firstItem="tC2-pH-qU1" firstAttribute="leading" secondItem="365-gm-dyP" secondAttribute="leading" constant="15" id="aKE-GQ-z0Z"/>
+                                            <constraint firstAttribute="trailing" secondItem="o7L-ZY-Fva" secondAttribute="trailing" constant="23" id="lse-Cn-bMP"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="365-gm-dyP" firstAttribute="top" secondItem="GYf-0K-TQf" secondAttribute="top" constant="20" id="Kvz-my-Uh6"/>
+                                    <constraint firstItem="365-gm-dyP" firstAttribute="leading" secondItem="GYf-0K-TQf" secondAttribute="leading" constant="25" id="Vqy-98-GhN"/>
+                                    <constraint firstAttribute="bottom" secondItem="365-gm-dyP" secondAttribute="bottom" constant="40" id="btj-3S-Ktd"/>
+                                    <constraint firstAttribute="trailing" secondItem="365-gm-dyP" secondAttribute="trailing" constant="25" id="mlB-PD-PcP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Qn7-jj-kdy"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GYf-0K-TQf" firstAttribute="centerY" secondItem="llS-Pz-Zcg" secondAttribute="centerY" id="8vh-PP-l06"/>
+                            <constraint firstItem="Qn7-jj-kdy" firstAttribute="trailing" secondItem="GYf-0K-TQf" secondAttribute="trailing" constant="50" id="Bwg-WH-1mN"/>
+                            <constraint firstItem="GYf-0K-TQf" firstAttribute="leading" secondItem="Qn7-jj-kdy" secondAttribute="leading" constant="50" id="C71-yh-EoD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblCookieDetails" destination="c2h-Y8-7Dl" id="65h-Mk-xFF"/>
+                        <outlet property="lblCookieName" destination="pdy-bq-iLT" id="ds2-Vj-68k"/>
+                        <outlet property="lblInfo" destination="tC2-pH-qU1" id="kJr-Mr-6CZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J1T-YK-LNX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="227.536231884058" y="1577.6785714285713"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zYR-ky-DhU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YYa-8U-Ssc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3fc-wk-VWF">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.98823529409999999" green="0.98431372549999996" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <navigationBarAppearance key="standardAppearance"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" red="0.98823529409999999" green="0.98431372549999996" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="shadowColor" red="0.98823529409999999" green="0.98431372549999996" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </navigationBarAppearance>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2Bw-ax-uEo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="udD-So-b7t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="69.642857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Lazy.png" width="1117.0909423828125" height="1117.0909423828125"/>
+        <image name="LazyCookie.png" width="1117.0909423828125" height="1117.0909423828125"/>
+        <image name="cookieIcon" width="20" height="20"/>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="lazy_cookie_shop_owner.png" width="1117.0909423828125" height="1117.0909423828125"/>
+        <image name="main_cookie_line.png" width="279.27273559570312" height="279.27273559570312"/>
+        <image name="mainpage_background.png" width="558.54547119140625" height="558.54547119140625"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
