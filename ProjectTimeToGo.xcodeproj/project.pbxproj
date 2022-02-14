@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		9A00FF232778B7DA0004B1E6 /* mainpage_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A00FF222778B7DA0004B1E6 /* mainpage_background.png */; };
 		9A11C22B277A06EB00D141D1 /* main_cookie_line.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A11C22A277A06EB00D141D1 /* main_cookie_line.png */; };
+		9A23460027BA4C9600FC2FAA /* Lazy.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A2345FF27BA4C9600FC2FAA /* Lazy.png */; };
+		9A23460227BA4F1000FC2FAA /* LazyCookieStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A23460127BA4F1000FC2FAA /* LazyCookieStoryViewController.swift */; };
+		9A23460427BA50EE00FC2FAA /* LoadGithubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A23460327BA50EE00FC2FAA /* LoadGithubViewController.swift */; };
 		9A2F96C2276F503E00BEE55B /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F96C1276F503E00BEE55B /* CustomView.swift */; };
 		9A2F96C4276F590D00BEE55B /* TimePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F96C3276F590D00BEE55B /* TimePickerViewController.swift */; };
 		9A39BB8727B78D5800DF181B /* LazyCookie.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A39BB8627B78D5800DF181B /* LazyCookie.png */; };
@@ -34,6 +37,9 @@
 /* Begin PBXFileReference section */
 		9A00FF222778B7DA0004B1E6 /* mainpage_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainpage_background.png; sourceTree = "<group>"; };
 		9A11C22A277A06EB00D141D1 /* main_cookie_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_cookie_line.png; sourceTree = "<group>"; };
+		9A2345FF27BA4C9600FC2FAA /* Lazy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lazy.png; sourceTree = "<group>"; };
+		9A23460127BA4F1000FC2FAA /* LazyCookieStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyCookieStoryViewController.swift; sourceTree = "<group>"; };
+		9A23460327BA50EE00FC2FAA /* LoadGithubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadGithubViewController.swift; sourceTree = "<group>"; };
 		9A2F96B7276F097100BEE55B /* NanumBarunpenB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunpenB.otf; sourceTree = "<group>"; };
 		9A2F96B8276F097100BEE55B /* NanumBarunpenR.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunpenR.otf; sourceTree = "<group>"; };
 		9A2F96C1276F503E00BEE55B /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
@@ -106,6 +112,8 @@
 				9AD0C0C127A6BBBE001F6B5C /* LazyOwnerDetailsViewController.swift */,
 				9AD6194A27A6D068003D544F /* Cookie.swift */,
 				9A39BB8827B7AF6800DF181B /* MenuViewController.swift */,
+				9A23460127BA4F1000FC2FAA /* LazyCookieStoryViewController.swift */,
+				9A23460327BA50EE00FC2FAA /* LoadGithubViewController.swift */,
 			);
 			path = ProjectTimeToGo;
 			sourceTree = "<group>";
@@ -123,6 +131,7 @@
 		9ADBAD2127786E7500576EC8 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				9A2345FF27BA4C9600FC2FAA /* Lazy.png */,
 				9A39BB8627B78D5800DF181B /* LazyCookie.png */,
 				9AD0C0BD27A66266001F6B5C /* lazy_cookie_shop_owner.png */,
 				9A11C22A277A06EB00D141D1 /* main_cookie_line.png */,
@@ -194,6 +203,7 @@
 				9A6B37E7276C3AE0000188F5 /* LaunchScreen.storyboard in Resources */,
 				9A00FF232778B7DA0004B1E6 /* mainpage_background.png in Resources */,
 				9A39BB8727B78D5800DF181B /* LazyCookie.png in Resources */,
+				9A23460027BA4C9600FC2FAA /* Lazy.png in Resources */,
 				9A6B37E4276C3AE0000188F5 /* Assets.xcassets in Resources */,
 				9AE718FD2774083F00D04C17 /* NanumBarunpenB.otf in Resources */,
 				9AE718FE2774084100D04C17 /* NanumBarunpenR.otf in Resources */,
@@ -213,10 +223,12 @@
 				9A2F96C4276F590D00BEE55B /* TimePickerViewController.swift in Sources */,
 				9AD0C0C227A6BBBE001F6B5C /* LazyOwnerDetailsViewController.swift in Sources */,
 				9A6B37DF276C3ADF000188F5 /* ViewController.swift in Sources */,
+				9A23460427BA50EE00FC2FAA /* LoadGithubViewController.swift in Sources */,
 				9A6B37DB276C3ADF000188F5 /* AppDelegate.swift in Sources */,
 				9AD6194B27A6D068003D544F /* Cookie.swift in Sources */,
 				9A39BB8927B7AF6800DF181B /* MenuViewController.swift in Sources */,
 				9A6B37DD276C3ADF000188F5 /* SceneDelegate.swift in Sources */,
+				9A23460227BA4F1000FC2FAA /* LazyCookieStoryViewController.swift in Sources */,
 				9AEAC207276E1957007F9C82 /* SettingViewController.swift in Sources */,
 				9AD27C4E2771A767007B936B /* Goal.swift in Sources */,
 				9AD27C502771B2F6007B936B /* MainViewController.swift in Sources */,
