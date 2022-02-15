@@ -164,6 +164,7 @@ class MainViewController: UIViewController {
     @objc func actionTapImageCookie(){
         guard let CookieDetailsViewController = self.storyboard?.instantiateViewController(identifier: "CookieDetailsViewController") as? CookieDetailsViewController else {return}
         
+        CookieDetailsViewController.modalTransitionStyle = .flipHorizontal
         self.present(CookieDetailsViewController, animated: true, completion: nil)
     }
     
