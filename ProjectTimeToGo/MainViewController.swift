@@ -132,12 +132,14 @@ class MainViewController: UIViewController {
     
     func saveData() {
         let userDefaults = UserDefaults.standard
-        guard let savedData = userDefaults.object(forKey: "cookies") as? [[String: Any]] else {return}
-        cookies = savedData.compactMap{
-            guard let goal = $0["goal"] as? String else {return nil}
-            guard let hour = $0["hour"] as? Int else {return nil}
-            guard let minute = $0["minute"] as? Int else {return nil}
-            return Cookie(goal: goal, hour: hour, minute: minute)
+        
+        if let savedData = userDefaults.object(forKey: "cookies") as? [[String: Any]] {
+            cookies = savedData.compactMap{
+                guard let goal = $0["goal"] as? String else {return nil}
+                guard let hour = $0["hour"] as? Int else {return nil}
+                guard let minute = $0["minute"] as? Int else {return nil}
+                return Cookie(goal: goal, hour: hour, minute: minute)
+            }
         }
         
         guard let goal = self.goal else {return}
