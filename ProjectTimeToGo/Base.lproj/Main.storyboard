@@ -752,13 +752,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eb9-T5-4Rw" customClass="CustomView" customModule="ProjectTimeToGo" customModuleProvider="target">
-                                <rect key="frame" x="50" y="287.5" width="314" height="267"/>
+                                <rect key="frame" x="50" y="276" width="314" height="290"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gw-Lx-Vy4">
-                                        <rect key="frame" x="264" y="209" width="30" height="38"/>
-                                        <fontDescription key="fontDescription" name="NanumBarunpenOTF-Bold" family="NanumBarunpenOTF" pointSize="20"/>
-                                        <state key="normal" title="설정">
-                                            <color key="titleColor" red="0.20000000000000001" green="0.14117647059999999" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gw-Lx-Vy4">
+                                        <rect key="frame" x="256" y="215" width="38" height="55"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
+                                        <color key="tintColor" red="0.97254908080000002" green="0.83529412749999998" blue="0.46666663889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Ok">
+                                            <color key="titleColor" red="0.97254908080000002" green="0.83529412749999998" blue="0.46666663889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>
                                             <action selector="tapBtnSetting:" destination="CE2-PZ-IlL" eventType="touchUpInside" id="nUQ-No-xOF"/>
@@ -776,7 +777,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="eb9-T5-4Rw" secondAttribute="height" multiplier="314:267" id="AnZ-Rx-RXp"/>
+                                    <constraint firstAttribute="width" secondItem="eb9-T5-4Rw" secondAttribute="height" multiplier="314:290" id="AnZ-Rx-RXp"/>
                                     <constraint firstAttribute="trailing" secondItem="9gw-Lx-Vy4" secondAttribute="trailing" constant="20" id="OPD-bB-khW"/>
                                     <constraint firstItem="Lda-U3-bpX" firstAttribute="top" secondItem="eb9-T5-4Rw" secondAttribute="top" constant="10" id="OxH-cj-1EB"/>
                                     <constraint firstItem="Lda-U3-bpX" firstAttribute="leading" secondItem="eb9-T5-4Rw" secondAttribute="leading" constant="20" id="Qyb-sY-cKp"/>

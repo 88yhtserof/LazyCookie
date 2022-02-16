@@ -22,7 +22,7 @@ class TimePickerViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.timePicker.setValue(UIColor.brown, forKey: "textColor")
+        self.timePicker.setValue(UIColor(displayP3Red: 51/255, green: 36/255, blue: 18/255, alpha: 1), forKey: "textColor")
     }
     @IBAction func changedTime(_ sender: UIDatePicker) {
         let time: Date = sender.date
