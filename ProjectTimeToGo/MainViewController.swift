@@ -68,7 +68,7 @@ class MainViewController: UIViewController {
         
         shap.path = circlePath.cgPath
         shap.lineWidth = 20
-        shap.strokeColor = UIColor(displayP3Red: 243/255, green: 220/255, blue: 152/255, alpha: 1).cgColor
+        shap.strokeColor = UIColor(displayP3Red: 248/255, green: 213/255, blue: 119/255, alpha: 1).cgColor
         shap.fillColor = UIColor.clear.cgColor
         shap.strokeEnd = 0
         shap.lineCap = .round
