@@ -122,11 +122,12 @@ class MainViewController: UIViewController {
             saveData()
         }
         
+        
         DispatchQueue.main.async {
-            let hour: Int = self.count/(3600)
-            let minute: Int = (self.count%3600)/60
-            let second: Int = (self.count%60)
-            self.lblTimer.text = "\(hour)시간 \(minute)분 \(second)초"
+            let hour = self.count/(3600) < 10 ? "0\(self.count/(3600))" : "\(self.count/(3600))"
+            let minute = (self.count%3600)/60 < 10 ? "0\((self.count%3600)/60)" : "\((self.count%3600)/60)"
+            let second = (self.count%60) < 10 ? "0\((self.count%60))" : "\((self.count%60))"
+            self.lblTimer.text = "\(hour):\(minute):\(second)"
         }
     }
     
