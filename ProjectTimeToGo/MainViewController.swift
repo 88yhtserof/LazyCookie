@@ -21,6 +21,7 @@ class MainViewController: UIViewController {
     var duration: Double = 0.0
     var timer = Timer()
     var count = 0
+    var startDate: Date?
     var achivementMessage: String = ""
     var failureMessage: String = ""
     var cookies: [Cookie] = []
@@ -68,7 +69,7 @@ class MainViewController: UIViewController {
         
         shap.path = circlePath.cgPath
         shap.lineWidth = 20
-        shap.strokeColor = UIColor(displayP3Red: 243/255, green: 220/255, blue: 152/255, alpha: 1).cgColor
+        shap.strokeColor = UIColor(displayP3Red: 248/255, green: 213/255, blue: 119/255, alpha: 1).cgColor
         shap.fillColor = UIColor.clear.cgColor
         shap.strokeEnd = 0
         shap.lineCap = .round
@@ -81,6 +82,7 @@ class MainViewController: UIViewController {
         let alert = UIAlertController(title: "나가기", message: "홈 화면으로 되돌아가시겠습니까?", preferredStyle: UIAlertController.Style.alert)
         let actionYes = UIAlertAction(title: "네", style: UIAlertAction.Style.default) {
             _ in
+            self.timer.invalidate()
             self.presentResultAlert(message: self.failureMessage)
         }
         let actionNo = UIAlertAction(title: "아니오", style: UIAlertAction.Style.default, handler: nil)
@@ -98,6 +100,8 @@ class MainViewController: UIViewController {
         let interval = 1.0
         self.timer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: timeSelector, userInfo: nil, repeats: true)
         
+        startDate = Date()
+        
         self.btnStart.isEnabled = false
         self.btnStart.setTitleColor(.brown, for: .normal)
         self.setCircleAnimation()
@@ -113,7 +117,8 @@ class MainViewController: UIViewController {
     }
     
     @objc func updateTime() {
-        self.count += 1
+        guard let timeInterval = self.startDate?.timeIntervalSinceNow else {return}
+        self.count = Int(round(timeInterval.magnitude))
         
         if self.count >= Int(self.duration) {
             self.presentResultAlert(message: self.achivementMessage)
@@ -123,21 +128,23 @@ class MainViewController: UIViewController {
         }
         
         DispatchQueue.main.async {
-            let hour: Int = self.count/(3600)
-            let minute: Int = (self.count%3600)/60
-            let second: Int = (self.count%60)
-            self.lblTimer.text = "\(hour)시간 \(minute)분 \(second)초"
+            let hour = self.count/(3600) < 10 ? "0\(self.count/(3600))" : "\(self.count/(3600))"
+            let minute = (self.count%3600)/60 < 10 ? "0\((self.count%3600)/60)" : "\((self.count%3600)/60)"
+            let second = (self.count%60) < 10 ? "0\((self.count%60))" : "\((self.count%60))"
+            self.lblTimer.text = "\(hour):\(minute):\(second)"
         }
     }
     
     func saveData() {
         let userDefaults = UserDefaults.standard
-        guard let savedData = userDefaults.object(forKey: "cookies") as? [[String: Any]] else {return}
-        cookies = savedData.compactMap{
-            guard let goal = $0["goal"] as? String else {return nil}
-            guard let hour = $0["hour"] as? Int else {return nil}
-            guard let minute = $0["minute"] as? Int else {return nil}
-            return Cookie(goal: goal, hour: hour, minute: minute)
+        
+        if let savedData = userDefaults.object(forKey: "cookies") as? [[String: Any]] {
+            cookies = savedData.compactMap{
+                guard let goal = $0["goal"] as? String else {return nil}
+                guard let hour = $0["hour"] as? Int else {return nil}
+                guard let minute = $0["minute"] as? Int else {return nil}
+                return Cookie(goal: goal, hour: hour, minute: minute)
+            }
         }
         
         guard let goal = self.goal else {return}
@@ -162,6 +169,7 @@ class MainViewController: UIViewController {
     @objc func actionTapImageCookie(){
         guard let CookieDetailsViewController = self.storyboard?.instantiateViewController(identifier: "CookieDetailsViewController") as? CookieDetailsViewController else {return}
         
+        CookieDetailsViewController.modalTransitionStyle = .flipHorizontal
         self.present(CookieDetailsViewController, animated: true, completion: nil)
     }
     

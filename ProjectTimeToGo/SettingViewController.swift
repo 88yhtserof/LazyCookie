@@ -9,13 +9,26 @@ import UIKit
 
 class SettingViewController: UIViewController {
 
-    @IBOutlet weak var textGoal: UITextField!
+    @IBOutlet weak var textGoal: UITextField! {
+        didSet{
+            textGoal.delegate = self
+        }
+    }
     @IBOutlet weak var btnTime: UIButton!
-    @IBOutlet weak var textFieldAchievement: UITextField!
-    @IBOutlet weak var textFieldFailure: UITextField!
+    @IBOutlet weak var textFieldAchievement: UITextField! {
+        didSet{
+            textFieldAchievement.delegate = self
+        }
+    }
+    @IBOutlet weak var textFieldFailure: UITextField!{
+        didSet{
+            textFieldFailure.delegate = self
+        }
+    }
+    @IBOutlet weak var textFieldView: CustomView!
     
-    var hour: Int = 1
-    var minute: Int = 30
+    var hour: Int = 0
+    var minute: Int = 1
     var goal: Goal? = nil
     
     override func viewDidLoad() {
@@ -46,6 +59,12 @@ class SettingViewController: UIViewController {
             }
         }
     }
+    @IBAction func beginTextFieldFailer(_ sender: UITextField) {
+        self.keboardWillShow()
+    }
+    @IBAction func endTextFieldFailer(_ sender: UITextField) {
+        self.keboardWillHide()
+    }
 }
 
 extension SettingViewController: TimePickerDelegate {
@@ -56,7 +75,29 @@ extension SettingViewController: TimePickerDelegate {
         if let resultMinute = minute {
             self.minute = resultMinute
         }
-        
-        self.btnTime.setTitle("\(self.hour)시간 \(self.minute)분", for: .normal)
+        let hourTitle = self.hour < 10 ? "0\(self.hour)" : "\(self.hour)"
+        let minuteTitle = self.minute < 10 ? "0\(self.minute)" : "\(self.minute)"
+        self.btnTime.setTitle("\(hourTitle):\(minuteTitle)", for: .normal)
+    }
+}
+
+extension SettingViewController {
+    func keboardWillShow(){
+        self.view.frame.origin.y -= textFieldView.frame.height
+    }
+    
+    func keboardWillHide(){
+        self.view.frame.origin.y += textFieldView.frame.height
+    }
+}
+
+extension SettingViewController: UITextFieldDelegate {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }
