@@ -21,6 +21,7 @@ class MainViewController: UIViewController {
     var duration: Double = 0.0
     var timer = Timer()
     var count = 0
+    var startDate: Date?
     var achivementMessage: String = ""
     var failureMessage: String = ""
     var cookies: [Cookie] = []
@@ -81,6 +82,7 @@ class MainViewController: UIViewController {
         let alert = UIAlertController(title: "나가기", message: "홈 화면으로 되돌아가시겠습니까?", preferredStyle: UIAlertController.Style.alert)
         let actionYes = UIAlertAction(title: "네", style: UIAlertAction.Style.default) {
             _ in
+            self.timer.invalidate()
             self.presentResultAlert(message: self.failureMessage)
         }
         let actionNo = UIAlertAction(title: "아니오", style: UIAlertAction.Style.default, handler: nil)
@@ -98,6 +100,8 @@ class MainViewController: UIViewController {
         let interval = 1.0
         self.timer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: timeSelector, userInfo: nil, repeats: true)
         
+        startDate = Date()
+        
         self.btnStart.isEnabled = false
         self.btnStart.setTitleColor(.brown, for: .normal)
         self.setCircleAnimation()
@@ -113,7 +117,8 @@ class MainViewController: UIViewController {
     }
     
     @objc func updateTime() {
-        self.count += 1
+        guard let timeInterval = self.startDate?.timeIntervalSinceNow else {return}
+        self.count = Int(round(timeInterval.magnitude))
         
         if self.count >= Int(self.duration) {
             self.presentResultAlert(message: self.achivementMessage)
@@ -121,7 +126,6 @@ class MainViewController: UIViewController {
             
             saveData()
         }
-        
         
         DispatchQueue.main.async {
             let hour = self.count/(3600) < 10 ? "0\(self.count/(3600))" : "\(self.count/(3600))"

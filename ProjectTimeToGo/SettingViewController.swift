@@ -27,8 +27,8 @@ class SettingViewController: UIViewController {
     }
     @IBOutlet weak var textFieldView: CustomView!
     
-    var hour: Int = 1
-    var minute: Int = 30
+    var hour: Int = 0
+    var minute: Int = 1
     var goal: Goal? = nil
     
     override func viewDidLoad() {
