@@ -9,7 +9,6 @@
 # 게으른쿠키
 <img width="1021" alt="스크린샷 2023-07-11 오후 7 06 06" src="https://github.com/88yhtserof/LazyCookie/assets/65601189/1a9547de-6e0a-41f2-8c6e-f31e57b0f07c">
 
-[<img src="https://user-images.githubusercontent.com/72292617/175788259-834fade7-30e3-4d7b-969d-06a38ab33fb2.png" width=300 height=100>](https://apps.apple.com/kr/app/%EA%B2%8C%EC%9C%BC%EB%A5%B8%EC%BF%A0%ED%82%A4/id1610830007)
 
 <br>
 <br>
